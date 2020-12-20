@@ -1,0 +1,168 @@
+#
+# Be aware that even a small syntax error here can lead to failures in output.
+#
+
+sidebar:
+    about: False # set to False or comment line if you want to remove the "how to use?" in the sidebar
+    education: False # set to False if you want education in main section instead of in sidebar
+
+    # Profile information
+    name: Kai Wang
+    tagline: Machine Learning Engineer at Tencent
+    avatar: profile.JPG  #place a 100x100 picture inside /assets/images/ folder and provide the name of the file below
+
+    # Sidebar links
+    email: wangjinjie722[at]gmail.com
+    # phone: 012 345 6789
+    # website: blog.webjeda.com #do not add http://
+    linkedin: Kai Wang
+    github: wangjinjie722
+    # gitlab:
+    # bitbucket:
+#    twitter: '@Xu_Arthas'
+    # stack-overflow: # Number/Username, e.g. 123456/alandoe
+    # codewars:
+    # goodreads: # Number-Username, e.g. 123456-alandoe
+
+    #languages:
+    #  - idiom: English
+    #    level: Native
+
+    #  - idiom: French
+    #    level: Professional
+
+    #  - idiom: Spanish
+    #    level: Professional
+
+    interests:
+      - item: Photography
+        link: 
+
+      - item: Hiking
+        link:
+
+      - item: Cooking
+        link:
+
+career-profile:
+    title: About Me
+    summary: |
+
+      Hi, there! I am currently a machine learning engineer at Tencent Game, [Lightspeed & Quantum Studios Group](https://guangzi.qq.com/).
+      Prior to this, I obtained my M.S. degree from [UC San Diego](http://www.ece.ucsd.edu/), 
+      advised by Prof. [Pengtao Xie](https://pengtaoxie.github.io/) and Prof. [Julian McAuley](https://cseweb.ucsd.edu/~jmcauley/),
+      and my B.E. degree from [Northwestern Polytechnical University(NPU)](http://en.nwpu.edu.cn/), respectively.
+
+      My research interest includes Applied Machine Learning in recommender system and game industry. Please feel free to find my resume [here](../assets/images/KaiWang_CV.pdf).
+
+education:
+    - degree: M.S. in Electrical and Computer Engineering
+      university: University of California San Diego
+      time: Sep. 2018 - Dec. 2020
+      logo: "../assets/images/ucsd_seal.png"
+      details: |
+        
+    - degree: B.E. in Aerospace Engineering
+      university: Northwestern Polytechnical University
+      time: Sep. 2014 - Jul. 2018
+      logo: "../assets/images/npu_seal.png"
+      details: |
+        
+experiences:
+    - role: Machine Learning Engineer
+      time: Jan. 2021 - Present
+      logo: "../assets/images/txgame.png"
+      company: Tencent
+      details: |
+
+    - role: Machine Learning Engineer Intern
+      time: Sep. 2020 - Nov.2020
+      logo: "../assets/images/bd.png"
+      company: ByteDance
+      details: |
+
+    - role: Summer Research Engineer Intern & Research Assistant
+      time: Mar. 2020 - Aug.2020
+      logo: "../assets/images/jacob.png"
+      company: University of California, San Diego
+      details: |
+
+    - role: Machine Learning Engineer Intern
+      time: Oct. 2019 - Feb.2020
+      logo: "../assets/images/txgame.png"
+      company: Tencent
+      details: |
+
+    - role: Machine Learning Research Intern
+      time: Jun. 2019 - Sep.2019
+      logo: "../assets/images/pingan.png"
+      company: PingAn Tech
+      details: |
+
+
+publications:
+    title: Publications
+    intro: |
+    papers:
+      - title: AdnFM -- An Attentive DenseNet based Factorization Machine for CTR Prediction
+        link: 
+        intro: "../assets/images/adnfm.png"
+        authors: __Kai Wang__, Chunxu Shen, Wenye Ma
+#        conference: CVPR 2020 [[paper](https://arxiv.org/abs/2003.09405) / [project page](https://twizwei.github.io/bddoia_project/)]
+#        details: A new paradigm is proposed for autonomous driving. The new paradigm lies between the end-to-end and pipelined approaches, and is inspired by how humans solve the problem. The objects that could originate hazard are denoted as action-inducing. They also define a set of explanations for these actions, which should be produced jointly with the latter. An extension of the BDD100K dataset is proposed. A new multi-task formulation of the problem, which optimizes the accuracy of both action commands and explanations, is then introduced. A CNN architecture is finally proposed to solve this problem.
+
+footer: >
+    <p>"关山难越，谁悲失路之人"</p>
+
+#    Template from <a href="http://themes.3rdwavemedia.com" target="_blank" rel="nofollow">Xiaoying Riley</a>
+
+skills:
+    title: Skills &amp; Proficiency
+
+    toolset:
+      - name: Python & Django
+        level: 98%
+
+      - name: Javascript & jQuery
+        level: 98%
+
+      - name: Angular
+        level: 98%
+
+      - name: HTML5 & CSS
+        level: 95%
+
+      - name: Ruby on Rails
+        level: 85%
+
+      - name: Sketch & Photoshop
+        level: 60%
+
+
+
+projects:
+    title: Projects
+    intro: >
+      You can list your side projects or open source libraries in this
+      section. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+      Vestibulum et ligula in nunc bibendum fringilla a eu lectus.
+    assignments:
+      - title: Velocity
+        link: "#hook"
+        tagline: "A responsive website template designed to help startups promote, market and sell their products."
+
+      - title: DevStudio
+        link: "#"
+        tagline: "A responsive website template designed to help web developers/designers market their services."
+
+      - title: Tempo
+        link: "#"
+        tagline: "A responsive website template designed to help startups promote their products or services and to attract users &amp; investors"
+
+      - title: Atom
+        link: "#"
+        tagline: "A comprehensive website template solution for startups/developers to market their mobile apps."
+
+      - title: Delta
+        link: "#"
+        tagline: "A responsive Bootstrap one page theme designed to help app developers promote their mobile apps"
