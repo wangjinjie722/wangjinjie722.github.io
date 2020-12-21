@@ -32,3 +32,6 @@ compress_html: # - http://jch.penibelst.de/
 port: 4000
 host: 0.0.0.0
 safe: false
+
+# Google Analytics
+google_analytics: G-PT9LJDYPGD
