@@ -35,14 +35,14 @@ sidebar:
     #    level: Professional
 
     interests:
-      - item: Photography
-        link: 
+      # - item: Photography
+      #   link: 
 
       - item: Hiking
         link:
 
-      - item: Cooking
-        link:
+      # - item: Cooking
+      #   link:
 
 career-profile:
     title: About Me
