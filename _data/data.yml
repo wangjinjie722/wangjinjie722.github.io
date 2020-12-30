@@ -48,12 +48,17 @@ career-profile:
     title: About Me
     summary: |
 
-      Hi, there! I am currently a machine learning engineer at Tencent Game, [Lightspeed & Quantum Studios Group](https://guangzi.qq.com/).
-      Prior to this, I obtained my M.S. degree from [UC San Diego](http://www.ece.ucsd.edu/), 
+      # Hi, there! I am currently a machine learning engineer at Tencent Game, [Lightspeed & Quantum Studios Group](https://guangzi.qq.com/).
+      # Prior to this, I obtained my M.S. degree from [UC San Diego](http://www.ece.ucsd.edu/), 
+      # advised by Prof. [Pengtao Xie](https://pengtaoxie.github.io/) and Prof. [Julian McAuley](https://cseweb.ucsd.edu/~jmcauley/),
+      # and my B.E. degree from [Northwestern Polytechnical University(NPU)](http://en.nwpu.edu.cn/), respectively.
+
+      Hi, I am a new graduate majoring in machine learning and data science.
+      I obtained my M.S. degree from [UC San Diego](http://www.ece.ucsd.edu/), 
       advised by Prof. [Pengtao Xie](https://pengtaoxie.github.io/) and Prof. [Julian McAuley](https://cseweb.ucsd.edu/~jmcauley/),
       and my B.E. degree from [Northwestern Polytechnical University(NPU)](http://en.nwpu.edu.cn/), respectively.
 
-      My research interest includes Applied Machine Learning in recommender system and game industry. Please feel free to find my resume [here](../assets/images/KaiWang_CV.pdf).
+      My research interest includes Applied Machine Learning in recommender system and game industry. Please feel free to find my resume [here](../assets/images/KaiWang_resume.pdf).
 
 education:
     - degree: M.S. in Electrical and Computer Engineering
@@ -69,11 +74,11 @@ education:
       details: |
         
 experiences:
-    - role: Machine Learning Engineer
-      time: Jan. 2021 - Present
-      logo: "../assets/images/txgame.png"
-      company: Tencent
-      details: |
+    # - role: Machine Learning Engineer
+    #   time: Jan. 2021 - Present
+    #   logo: "../assets/images/txgame.png"
+    #   company: Tencent
+    #   details: |
 
     - role: Machine Learning Engineer Intern
       time: Sep. 2020 - Nov.2020
