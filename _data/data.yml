@@ -43,7 +43,7 @@ sidebar:
 
       # - item: Cooking
       #   link:
-      
+
 # Hi, there! I am currently a machine learning engineer at Tencent Game, [Lightspeed & Quantum Studios Group](https://guangzi.qq.com/).
       # Prior to this, I obtained my M.S. degree from [UC San Diego](http://www.ece.ucsd.edu/), 
       # advised by Prof. [Pengtao Xie](https://pengtaoxie.github.io/) and Prof. [Julian McAuley](https://cseweb.ucsd.edu/~jmcauley/),
@@ -64,13 +64,13 @@ career-profile:
 education:
     - degree: M.S. in Electrical and Computer Engineering
       university: University of California San Diego
-      time: Sep. 2018 - Dec. 2020
+      time: Sept. 2018 - Dec. 2020
       logo: "../assets/images/ucsd_seal.png"
       details: |
         
     - degree: B.E. in Aerospace Engineering
       university: Northwestern Polytechnical University
-      time: Sep. 2014 - Jul. 2018
+      time: Sept. 2014 - Jul. 2018
       logo: "../assets/images/npu_seal.png"
       details: |
         
@@ -82,7 +82,7 @@ experiences:
     #   details: |
 
     - role: Machine Learning Engineer Intern
-      time: Sep. 2020 - Nov.2020
+      time: Sept. 2020 - Nov.2020
       logo: "../assets/images/bd.png"
       company: ByteDance
       details: |
@@ -100,7 +100,7 @@ experiences:
       details: |
 
     - role: Machine Learning Research Intern
-      time: Jun. 2019 - Sep.2019
+      time: Jun. 2019 - Sept.2019
       logo: "../assets/images/pingan.png"
       company: PingAn Tech
       details: |
