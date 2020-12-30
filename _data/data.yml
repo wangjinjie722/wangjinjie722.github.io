@@ -43,16 +43,17 @@ sidebar:
 
       # - item: Cooking
       #   link:
+      
+# Hi, there! I am currently a machine learning engineer at Tencent Game, [Lightspeed & Quantum Studios Group](https://guangzi.qq.com/).
+      # Prior to this, I obtained my M.S. degree from [UC San Diego](http://www.ece.ucsd.edu/), 
+      # advised by Prof. [Pengtao Xie](https://pengtaoxie.github.io/) and Prof. [Julian McAuley](https://cseweb.ucsd.edu/~jmcauley/),
+      # and my B.E. degree from [Northwestern Polytechnical University(NPU)](http://en.nwpu.edu.cn/), respectively.
 
 career-profile:
     title: About Me
     summary: |
 
-      # Hi, there! I am currently a machine learning engineer at Tencent Game, [Lightspeed & Quantum Studios Group](https://guangzi.qq.com/).
-      # Prior to this, I obtained my M.S. degree from [UC San Diego](http://www.ece.ucsd.edu/), 
-      # advised by Prof. [Pengtao Xie](https://pengtaoxie.github.io/) and Prof. [Julian McAuley](https://cseweb.ucsd.edu/~jmcauley/),
-      # and my B.E. degree from [Northwestern Polytechnical University(NPU)](http://en.nwpu.edu.cn/), respectively.
-
+      
       Hi, I am a new graduate majoring in machine learning and data science.
       I obtained my M.S. degree from [UC San Diego](http://www.ece.ucsd.edu/), 
       advised by Prof. [Pengtao Xie](https://pengtaoxie.github.io/) and Prof. [Julian McAuley](https://cseweb.ucsd.edu/~jmcauley/),
