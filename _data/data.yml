@@ -43,19 +43,19 @@ sidebar:
 
       - item: Traveling
         link: https://www.google.com/maps/d/u/0/edit?mid=17LNQyXGDYA2TEIECT1Jg5Vr1IyIMQ4cj&usp=sharing
+# Hi, I am a new graduate majoring in machine learning and data science.
+#       I obtained my M.S. degree from [UC San Diego](http://www.ece.ucsd.edu/), 
+#       advised by Prof. [Pengtao Xie](https://pengtaoxie.github.io/) and Prof. [Julian McAuley](https://cseweb.ucsd.edu/~jmcauley/),
+#       and my B.E. degree from [Northwestern Polytechnical University(NPU)](http://en.nwpu.edu.cn/), respectively.
 
-# Hi, there! I am currently a machine learning engineer at Tencent Game, [Lightspeed & Quantum Studios Group](https://guangzi.qq.com/).
-      # Prior to this, I obtained my M.S. degree from [UC San Diego](http://www.ece.ucsd.edu/), 
-      # advised by Prof. [Pengtao Xie](https://pengtaoxie.github.io/) and Prof. [Julian McAuley](https://cseweb.ucsd.edu/~jmcauley/),
-      # and my B.E. degree from [Northwestern Polytechnical University(NPU)](http://en.nwpu.edu.cn/), respectively.
 
 career-profile:
     title: About Me
     summary: |
 
       
-      Hi, I am a new graduate majoring in machine learning and data science.
-      I obtained my M.S. degree from [UC San Diego](http://www.ece.ucsd.edu/), 
+      Hi, there! I am currently a machine learning engineer at Tencent Game, [Lightspeed & Quantum Studios Group](https://guangzi.qq.com/).
+      Prior to this, I obtained my M.S. degree from [UC San Diego](http://www.ece.ucsd.edu/), 
       advised by Prof. [Pengtao Xie](https://pengtaoxie.github.io/) and Prof. [Julian McAuley](https://cseweb.ucsd.edu/~jmcauley/),
       and my B.E. degree from [Northwestern Polytechnical University(NPU)](http://en.nwpu.edu.cn/), respectively.
 
@@ -75,11 +75,11 @@ education:
       details: |
         
 experiences:
-    # - role: Machine Learning Engineer
-    #   time: Jan. 2021 - Present
-    #   logo: "../assets/images/txgame.png"
-    #   company: Tencent
-    #   details: |
+    - role: Machine Learning Engineer
+      time: Jan. 2021 - Present
+      logo: "../assets/images/txgame.png"
+      company: Tencent
+      details: |
 
     - role: Machine Learning Engineer Intern
       time: Sept. 2020 - Nov.2020
