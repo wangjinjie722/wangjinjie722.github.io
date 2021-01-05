@@ -41,7 +41,7 @@ sidebar:
       - item: Hiking[click_me]
         link:
 
-      - item: Traveling
+      - item: Traveling[click_me]
         link: https://www.google.com/maps/d/u/0/edit?mid=17LNQyXGDYA2TEIECT1Jg5Vr1IyIMQ4cj&usp=sharing
 # Hi, I am a new graduate majoring in machine learning and data science.
 #       I obtained my M.S. degree from [UC San Diego](http://www.ece.ucsd.edu/), 
