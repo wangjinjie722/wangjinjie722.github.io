@@ -38,7 +38,7 @@ sidebar:
       # - item: Photography
       #   link: 
 
-      - item: Hiking
+      - item: Hiking[click_me]
         link:
 
       - item: Traveling
