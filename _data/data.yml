@@ -54,7 +54,7 @@ career-profile:
     summary: |
 
       
-      Hi, there! I am currently a machine learning engineer at Tencent Game, [Lightspeed & Quantum Studios Group](https://guangzi.qq.com/).
+      Hi, there! I am currently a machine learning researcher at Tencent Game, [Lightspeed & Quantum Studios Group](https://guangzi.qq.com/).
       Prior to this, I obtained my M.S. degree from [UC San Diego](http://www.ece.ucsd.edu/), 
       advised by Prof. [Pengtao Xie](https://pengtaoxie.github.io/) and Prof. [Julian McAuley](https://cseweb.ucsd.edu/~jmcauley/),
       and my B.E. degree from [Northwestern Polytechnical University(NPU)](http://en.nwpu.edu.cn/), respectively.
@@ -75,17 +75,17 @@ education:
       details: |
         
 experiences:
-    - role: Machine Learning Engineer
+    - role: Machine Learning Researcher
       time: Mar. 2021 - Present
       logo: "../assets/images/txgame.png"
       company: Tencent
-      details: |
+      details: Leagure of Legend - Wild Rift & CN
 
     - role: Machine Learning Engineer Intern
       time: Sept. 2020 - Nov.2020
       logo: "../assets/images/bd.png"
       company: ByteDance
-      details: |
+      details: Recommender system
 
     - role: Summer Research Intern & Research Assistant
       time: Mar. 2020 - Aug.2020
@@ -97,13 +97,13 @@ experiences:
       time: Oct. 2019 - Feb.2020
       logo: "../assets/images/txgame.png"
       company: Tencent
-      details: |
+      details: Recommender system
 
     - role: Machine Learning Research Intern
       time: Jun. 2019 - Sept.2019
       logo: "../assets/images/pingan.png"
       company: PingAn Tech
-      details: |
+      details: Medical Deep learning
 
 
 publications:
