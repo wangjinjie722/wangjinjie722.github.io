@@ -77,12 +77,12 @@ education:
 experiences:
     - role: Machine Learning Researcher
       time: May. 2022 - Present
-      logo: "../assets/images/tiktok.png"
+      logo: "../assets/images/tiktok2.png"
       company: TikTok
       details: TikTok recommender systems
     - role: Machine Learning Researcher
       time: Mar. 2021 - May. 2022
-      logo: "../assets/images/lolm.png"
+      logo: "../assets/images/lolm2.png"
       company: Tencent
       details: Leagure of Legend - Wild Rift & CN
 
