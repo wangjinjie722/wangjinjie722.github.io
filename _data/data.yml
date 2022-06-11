@@ -79,7 +79,7 @@ experiences:
       time: May. 2022 - Present
       logo: "../assets/images/tiktok2.png"
       company: TikTok
-      details: TikTok recommender systems
+      details: TikTok recommender system
     - role: Machine Learning Researcher
       time: Mar. 2021 - May. 2022
       logo: "../assets/images/lolm2.png"
@@ -90,7 +90,7 @@ experiences:
       time: Sept. 2020 - Nov.2020
       logo: "../assets/images/bd.png"
       company: ByteDance
-      details: Recommender system
+      details: Short video recommender system
 
     - role: Summer Research Intern & Research Assistant
       time: Mar. 2020 - Aug.2020
@@ -102,7 +102,7 @@ experiences:
       time: Oct. 2019 - Feb.2020
       logo: "../assets/images/txgame.png"
       company: Tencent
-      details: Recommender system
+      details: Game community recommender system
 
     - role: Machine Learning Research Intern
       time: Jun. 2019 - Sept.2019
