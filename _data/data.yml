@@ -118,7 +118,7 @@ publications:
       - title: AdnFM -- An Attentive DenseNet based Factorization Machine for CTR Prediction
         link: 
         intro: "../assets/images/adnfm.png"
-        authors: __Kai Wang__, Chunxu Shen, Wenye Ma
+        authors: __Kai Wang__, Chunxu Shen, Chaoyun Zhang, Wenye Ma
         conference: ICCDE2022 [[paper](https://dl.acm.org/doi/abs/10.1145/3512850.3512852)]
         details: A new model for CTR prediction.
 #        conference: CVPR 2020 [[paper](https://arxiv.org/abs/2003.09405) / [project page](https://twizwei.github.io/bddoia_project/)]
