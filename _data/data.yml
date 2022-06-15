@@ -125,7 +125,7 @@ publications:
 #        details: A new paradigm is proposed for autonomous driving. The new paradigm lies between the end-to-end and pipelined approaches, and is inspired by how humans solve the problem. The objects that could originate hazard are denoted as action-inducing. They also define a set of explanations for these actions, which should be produced jointly with the latter. An extension of the BDD100K dataset is proposed. A new multi-task formulation of the problem, which optimizes the accuracy of both action commands and explanations, is then introduced. A CNN architecture is finally proposed to solve this problem.
 
 footer: >
-    <p>"Looking for normal things, interesting jobs, nice apartments and someone hiking together."</p>
+    <p>"Got normal things, interesting jobs, nice apartments, looking for someone hiking/swimming together."</p>
 
 # {% raw %}{%- if jekyll.environment == 'production' -%}
 #   {%- include google-analytics.html -%}
