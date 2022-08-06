@@ -17,25 +17,25 @@
   {% endif %}
   
   <table width="100%" border="0">
-  <tr>
   {% for publication in publications.papers %}
-  <td width="25%" valign="top">
-    <a href={{ publication.intro }}><img src={{publication.intro}} width="250px" alt="" ></a>
-  </td>
-  <td width="75%">
-  <div class="item">
-    {% if publication.link %}
-      <li><a href="{{ publication.link }}">{{ publication.title }}</a></li>
-    {% else %}
-      <li>{{ publication.title }}</li>
-    {% endif %}
-    <div class="publication-authors">{{ publication.authors | markdownify}}</div>
-    <div class="publication-conference">{{ publication.conference |  markdownify }}</div>
-    <div class="publication-details">{{ publication.details | markdownify}} </div>
-  </div><!--//item-->
-  </td>
-  {% endfor %}
+  <tr>
+    <td width="25%" align="left">
+      <a href={{ publication.intro }}><img src={{publication.intro}} width="250px" alt="" ></a>
+    </td>
+    <td width="75%">
+    <div class="item">
+      {% if publication.link %}
+        <li><a href="{{ publication.link }}">{{ publication.title }}</a></li>
+      {% else %}
+        <li>{{ publication.title }}</li>
+      {% endif %}
+      <div class="publication-authors">{{ publication.authors | markdownify}}</div>
+      <div class="publication-conference">{{ publication.conference |  markdownify }}</div>
+      <div class="publication-details">{{ publication.details | markdownify}} </div>
+    </div><!--//item-->
+    </td>
   </tr>
+  {% endfor %}
   </table>  
 
 </section><!--//section-->
