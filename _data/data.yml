@@ -115,6 +115,12 @@ publications:
     title: Publications
     intro: |
     papers:
+      - title: QuickSkill: Novice Skill Estimation in Online Multiplayer Games
+        link: 
+        intro: "../assets/images/trueskill.png"
+        authors: __Kai Wang__*, Chaoyun* Zhang, Hao Chen, Ge Fan, Yingjie Li, Lifang Wu, Bingchao Zheng
+        conference: CIKM2022 
+        details: A novel ML method in Game Industry.
       - title: AdnFM -- An Attentive DenseNet based Factorization Machine for CTR Prediction
         link: 
         intro: "../assets/images/adnfm.png"
