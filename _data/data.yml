@@ -80,6 +80,7 @@ experiences:
       logo: "../assets/images/tiktok2.png"
       company: TikTok
       details: TikTok recommender system
+
     - role: Machine Learning Researcher
       time: Mar. 2021 - May. 2022
       logo: "../assets/images/lolm2.png"
@@ -110,19 +111,41 @@ experiences:
       company: PingAn Tech
       details: Medical deep & reinforcement learning
 
+# publications:
+#     title: Publications
+#     intro: >
+#       You can list your publications in this section. Lorem ipsum dolor sit
+#       amet, consectetur adipiscing elit. Vestibulum et ligula in nunc
+#       bibendum fringilla a eu lectus.
+#     papers:
+#       - title: The Art of Computer Programming
+#         link: "#"
+#         authors: Donald E. Knuth
+#         conference: Addison-Wesley, 1968
+
+#       - title: "Genetic Programming III: Darwinian Invention &amp; Problem Solving"
+#         link: "#"
+#         authors: Koza, J.R., Andre, D., Bennett, F.H., Keane, M.A.
+#         conference: "Morgan Kaufmann Publishers Inc., San Francisco, CA, USA, 1st edn. (1999)"
+
+#       - title: A syntax directed compiler for Algol 60
+#         link: "#"
+#         authors: Edgar T. Irons
+#         conference: "Comm. ACM 4 (1961), 51–55"
 
 publications:
     title: Publications
-    intro: |
+    # intro: 
     papers:
-      - title: QuickSkill: Novice Skill Estimation in Online Multiplayer Games
+      - title: QuickSkill Novice Skill Estimation in Online Multiplayer Games
         link: 
         intro: "../assets/images/trueskill.png"
-        authors: __Kai Wang__*, Chaoyun* Zhang, Hao Chen, Ge Fan, Yingjie Li, Lifang Wu, Bingchao Zheng
+        authors: __Kai Wang__, Chaoyun Zhang, Hao Chen, Ge Fan, Yingjie Li, Lifang Wu, Bingchao Zheng
         conference: CIKM2022 
         details: A novel ML method in Game Industry.
+      
       - title: AdnFM -- An Attentive DenseNet based Factorization Machine for CTR Prediction
-        link: 
+        link: https://dl.acm.org/doi/abs/10.1145/3512850.3512852
         intro: "../assets/images/adnfm.png"
         authors: __Kai Wang__, Chunxu Shen, Chaoyun Zhang, Wenye Ma
         conference: ICCDE2022 [[paper](https://dl.acm.org/doi/abs/10.1145/3512850.3512852)]
@@ -131,7 +154,7 @@ publications:
 #        details: A new paradigm is proposed for autonomous driving. The new paradigm lies between the end-to-end and pipelined approaches, and is inspired by how humans solve the problem. The objects that could originate hazard are denoted as action-inducing. They also define a set of explanations for these actions, which should be produced jointly with the latter. An extension of the BDD100K dataset is proposed. A new multi-task formulation of the problem, which optimizes the accuracy of both action commands and explanations, is then introduced. A CNN architecture is finally proposed to solve this problem.
 
 footer: >
-    <p>"Got normal things, interesting jobs, nice apartments, looking for someone hiking/swimming together."</p>
+    <p>"Got normal things, interesting jobs, nice apartments, missing someone hiking/swimming together."</p>
 
 # {% raw %}{%- if jekyll.environment == 'production' -%}
 #   {%- include google-analytics.html -%}
