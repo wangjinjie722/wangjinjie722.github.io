@@ -144,6 +144,13 @@ publications:
         conference: CIKM2022 
         details: A novel ML method in Game Industry
       
+      - title: MV-HAN A Hybrid Attentive Networks based Multi-View Learning Model for Large-scale Contents Recommendation
+        link: 
+        intro: "../assets/images/mv_han.png"
+        authors: __Ge Fan__, Chaoyun Zhang, Kai Wang, Junyang Chen
+        conference: ASE2022 
+        details: 
+      
       - title: AdnFM -- An Attentive DenseNet based Factorization Machine for CTR Prediction
         link: https://dl.acm.org/doi/abs/10.1145/3512850.3512852
         intro: "../assets/images/adnfm.png"
