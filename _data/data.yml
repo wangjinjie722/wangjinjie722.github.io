@@ -138,10 +138,10 @@ publications:
     intro: |
     papers:
       - title: QuickSkill Novice Skill Estimation in Online Multiplayer Games
-        link: 
+        link: https://arxiv.org/abs/2208.07704
         intro: "../assets/images/trueskill.png"
         authors: __Kai Wang__, __Chaoyun Zhang__, Hao Chen, Ge Fan, Yingjie Li, Lifang Wu, Bingchao Zheng
-        conference: CIKM2022 
+        conference: CIKM2022 [[paper](https://arxiv.org/abs/2208.07704)]
         details: A novel ML method in Game Industry
       
       - title: MV-HAN A Hybrid Attentive Networks based Multi-View Learning Model for Large-scale Contents Recommendation
