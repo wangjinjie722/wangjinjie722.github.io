@@ -79,19 +79,19 @@ experiences:
       time: May. 2022 - Present
       logo: "../assets/images/tiktok2.png"
       company: TikTok
-      details: TikTok recommender system
+      details: TikTok Social recommender system, ranking model owner.
 
     - role: Machine Learning Researcher
       time: Mar. 2021 - May. 2022
       logo: "../assets/images/lolm2.png"
       company: Tencent
-      details: Leagure of Legend - Wild Rift & CN
+      details: Leagure of Legend - Wild Rift & CN, matching system and skill-level prediction.
 
     - role: Machine Learning Engineer Intern
       time: Sept. 2020 - Nov.2020
       logo: "../assets/images/bd.png"
       company: ByteDance
-      details: Short video recommender system
+      details: Short video recommender system, watermelon video.
 
     - role: Summer Research Intern & Research Assistant
       time: Mar. 2020 - Aug.2020
@@ -147,7 +147,7 @@ publications:
       - title: MV-HAN A Hybrid Attentive Networks based Multi-View Learning Model for Large-scale Contents Recommendation
         link: 
         intro: "../assets/images/mv_han.png"
-        authors: __Ge Fan__, Chaoyun Zhang, Kai Wang, Junyang Chen
+        authors: Ge Fan, Chaoyun Zhang, __Kai Wang__, Junyang Chen
         conference: ASE2022 
         details: 
       
