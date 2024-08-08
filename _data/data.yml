@@ -140,14 +140,14 @@ publications:
       - title: "CUPID: Improving Battle Fairness and Position Satisfaction in Online MOBA Games with a Re-matchmaking System"
         link: "../assets/images/2024CUPID.pdf"
         intro: "../assets/images/cupid.png"
-        authors: __Ge Fan__, Chaoyun Zhang, Kai Wang, Yingjie Li, Junyang Chen, Zenglin Xu
+        authors: Ge Fan, Chaoyun Zhang, __Kai Wang__, Yingjie Li, Junyang Chen, Zenglin Xu
         conference: CSCW2024 [[paper](https://arxiv.org/abs/2406.19720)]
         details: Matching systems in Game Industry, applied in a popular MOBA game.
 
       - title: "QuickSkill Novice Skill Estimation in Online Multiplayer Games"
         link: https://arxiv.org/abs/2208.07704
         intro: "../assets/images/trueskill.png"
-        authors: __Kai Wang__, __Chaoyun Zhang__, Hao Chen, Ge Fan, Yingjie Li, Lifang Wu, Bingchao Zheng
+        authors: __Kai Wang__, Chaoyun Zhang, Hao Chen, Ge Fan, Yingjie Li, Lifang Wu, Bingchao Zheng
         conference: CIKM2022 [[paper](https://arxiv.org/abs/2208.07704)]
         details: A novel ML method in Game Industry, applied in a popular MOBA game.
       
