@@ -8,7 +8,7 @@ sidebar:
 
     # Profile information
     name: Kai Wang
-    tagline: Machine Learning Engineer at TikTok
+    tagline: Senior Machine Learning Engineer at TikTok
     avatar: profile2.png # jpg for profile.jpg  #place a 100x100 picture inside /assets/images/ folder and provide the name of the file below
 
     # Sidebar links
@@ -54,7 +54,7 @@ career-profile:
     summary: |
 
       
-      Hi, there! I am currently a machine learning engineer at [TikTok](https://www.tiktok.com/). Ex @ Tencent Game, [Lightspeed & Quantum Studios Group](https://guangzi.qq.com/).
+      Hi, there! I am currently a senior machine learning engineer at [TikTok](https://www.tiktok.com/). Ex @ Tencent Game, [Lightspeed & Quantum Studios Group](https://guangzi.qq.com/).
       Prior to this, I obtained my M.S. degree from [UC San Diego](http://www.ece.ucsd.edu/), 
       advised by Prof. [Pengtao Xie](https://pengtaoxie.github.io/) and Prof. [Julian McAuley](https://cseweb.ucsd.edu/~jmcauley/),
       and my B.E. degree from [Northwestern Polytechnical University(NPU)](http://en.nwpu.edu.cn/), respectively.
