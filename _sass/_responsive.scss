@@ -2,12 +2,37 @@
 
 /* Tablet */
 @media (max-width: 768px) {
+  .hero-split {
+    flex-direction: column;
+    gap: 32px;
+  }
+
+  .hero-left {
+    text-align: center;
+    align-items: center;
+  }
+
+  .hero-right {
+    flex: 0 1 auto;
+    width: 100%;
+    max-width: 420px;
+  }
+
   .hero-title {
     font-size: 2.2rem;
   }
 
   .hero-typewriter {
     font-size: 1rem;
+  }
+
+  .hero-tagline {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hero-links {
+    justify-content: center;
   }
 
   .section-title {
@@ -57,6 +82,10 @@
     gap: 4px;
   }
 
+  .travel-map-wrapper iframe {
+    height: 360px;
+  }
+
   /* Hamburger menu */
   .hamburger {
     display: flex;
@@ -94,13 +123,12 @@
     font-size: 1.8rem;
   }
 
-  .hero-avatar img {
-    width: 120px;
-    height: 120px;
-  }
-
   .hero-typewriter {
     font-size: 0.9rem;
+  }
+
+  .hero-tagline {
+    font-size: 0.95rem;
   }
 
   .container {
@@ -124,6 +152,10 @@
 
   .publication-info {
     padding: 16px;
+  }
+
+  .travel-map-wrapper iframe {
+    height: 280px;
   }
 
   .nav-right {

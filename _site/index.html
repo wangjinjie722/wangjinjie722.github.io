@@ -41,7 +41,8 @@
         <li><a href="#experience" class="nav-link">Experience</a></li>
         <li><a href="#education" class="nav-link">Education</a></li>
         <li><a href="#publications" class="nav-link">Publications</a></li>
-        </ul>
+        <li><a href="#travel" class="nav-link">Travel</a></li>
+      </ul>
       <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
         <i class="fas fa-moon"></i>
         <i class="fas fa-sun"></i>
@@ -60,30 +61,68 @@
     
 <section class="hero" id="hero">
   <canvas id="hero-canvas"></canvas>
-  <div class="hero-content">
-    <div class="hero-avatar">
-      <img src="/assets/images/profile2.png" alt="Kai Wang" />
+  <div class="hero-content hero-split">
+    <!-- Left: info -->
+    <div class="hero-left">
+      <div class="hero-avatar">
+        <img src="/assets/images/profile2.png" alt="Kai Wang" />
+      </div>
+      <h1 class="hero-title">Hi, I'm <span class="highlight">Kai Wang</span></h1>
+      <div class="hero-typewriter">
+        <span id="typewriter"></span><span class="cursor">|</span>
+      </div>
+      <p class="hero-tagline">
+        I build large-scale recommendation systems and explore the intersection of ML and gaming.
+      </p>
+      <div class="hero-links">
+        
+        <a href="mailto:wangjinjie722@gmail.com" aria-label="Email" class="hero-icon" data-tooltip="Email me">
+          <i class="fas fa-envelope"></i>
+        </a>
+        
+        
+        <a href="https://www.linkedin.com/in/kai-wang-822870170/" target="_blank" rel="noopener" aria-label="LinkedIn" class="hero-icon" data-tooltip="LinkedIn">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        
+        
+        <a href="https://github.com/wangjinjie722" target="_blank" rel="noopener" aria-label="GitHub" class="hero-icon" data-tooltip="GitHub">
+          <i class="fab fa-github"></i>
+        </a>
+        
+        <a href="https://scholar.google.com/citations?user=s-22l8QAAAAJ&hl=en" target="_blank" rel="noopener" aria-label="Google Scholar" class="hero-icon" data-tooltip="Google Scholar">
+          <i class="fas fa-graduation-cap"></i>
+        </a>
+      </div>
     </div>
-    <h1 class="hero-title">Hi, I'm <span class="highlight">Kai Wang</span></h1>
-    <div class="hero-typewriter">
-      <span id="typewriter"></span><span class="cursor">|</span>
-    </div>
-    <div class="hero-links">
-      
-      <a href="mailto:wangjinjie722@gmail.com" aria-label="Email" class="hero-icon" data-tooltip="Email me">
-        <i class="fas fa-envelope"></i>
-      </a>
-      
-      
-      <a href="https://www.linkedin.com/in/kai-wang-822870170/" target="_blank" rel="noopener" aria-label="LinkedIn" class="hero-icon" data-tooltip="LinkedIn">
-        <i class="fab fa-linkedin"></i>
-      </a>
-      
-      
-      <a href="https://github.com/wangjinjie722" target="_blank" rel="noopener" aria-label="GitHub" class="hero-icon" data-tooltip="GitHub">
-        <i class="fab fa-github"></i>
-      </a>
-      
+    <!-- Right: terminal -->
+    <div class="hero-right">
+      <div class="terminal">
+        <div class="terminal-header">
+          <span class="terminal-dot red"></span>
+          <span class="terminal-dot yellow"></span>
+          <span class="terminal-dot green"></span>
+          <span class="terminal-title">kai@dev ~ %</span>
+        </div>
+        <div class="terminal-body" id="terminal-body">
+          <div class="terminal-line">
+            <span class="terminal-prompt">$</span>
+            <span class="terminal-cmd">cat about_kai.json</span>
+          </div>
+          <pre class="terminal-output" id="terminal-json"></pre>
+          <div class="terminal-line terminal-line-2">
+            <span class="terminal-prompt">$</span>
+            <span class="terminal-cmd">echo $CURRENT_FOCUS</span>
+          </div>
+          <div class="terminal-output terminal-output-2">
+            Building large-scale recommendation systems @ TikTok
+          </div>
+          <div class="terminal-line terminal-line-3">
+            <span class="terminal-prompt">$</span>
+            <span class="terminal-cmd terminal-blink">_</span>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
   <a href="#about" class="scroll-indicator" aria-label="Scroll down">
@@ -390,6 +429,55 @@ and my B.E. degree from <a href="http://en.nwpu.edu.cn/">Northwestern Polytechni
 
 
 
+<section class="section travel-section" id="travel">
+  <div class="container">
+    <h2 class="section-title" data-aos="fade-up">Places I've Been</h2>
+    <div class="travel-content" data-aos="fade-up" data-aos-delay="100">
+      <div class="travel-map-wrapper">
+        <iframe
+          src="https://www.google.com/maps/d/u/0/embed?mid=17LNQyXGDYA2TEIECT1Jg5Vr1IyIMQ4cj"
+          width="100%"
+          height="480"
+          frameborder="0"
+          style="border:0; border-radius: 12px;"
+          allowfullscreen
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+      <p class="travel-hint">
+        <i class="fas fa-map-marker-alt"></i> Zoom in and click the pins to explore!
+      </p>
+    </div>
+  </div>
+</section>
+
+
+<section class="section visitor-section" id="visitors">
+  <div class="container">
+    <h2 class="section-title" data-aos="fade-up">Visitors Around the World</h2>
+    <div class="visitor-content" data-aos="fade-up" data-aos-delay="100">
+      <div class="visitor-counter">
+        <a href="https://info.flagcounter.com/zg0z" target="_blank" rel="noopener">
+          <img
+            src="https://s01.flagcounter.com/map/zg0z/size_m/txt_2d2d3a/border_e8f0fe/pageviews_1/viewers_Visitors/flags_0/"
+            alt="Visitor Map"
+            loading="lazy" />
+        </a>
+      </div>
+      <div class="visitor-flags">
+        <a href="https://info.flagcounter.com/zg0z" target="_blank" rel="noopener">
+          <img
+            src="https://s01.flagcounter.com/count2/zg0z/bg_FFFFFF/txt_000000/border_CCCCCC/columns_2/maxflags_10/viewers_0/labels_0/pageviews_0/flags_0/percent_0/"
+            alt="Flag Counter"
+            loading="lazy" />
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
 
 
   </main>
@@ -408,10 +496,6 @@ and my B.E. degree from <a href="http://en.nwpu.edu.cn/">Northwestern Polytechni
         
         <a href="https://github.com/wangjinjie722" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
         
-      </div>
-      <div class="neural-playground-wrapper">
-        <p class="playground-hint"><i class="fas fa-mouse-pointer"></i> Click to spawn neurons</p>
-        <canvas id="neural-playground"></canvas>
       </div>
       <div class="footer-quote">
         <p>"Get normal things, interesting jobs, nice apartments, and someone hiking together."</p>

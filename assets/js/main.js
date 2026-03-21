@@ -6,6 +6,31 @@ document.addEventListener('DOMContentLoaded', function () {
     offset: 80,
   });
 
+  // ========== Terminal JSON Animation ==========
+  var terminalJson = document.getElementById('terminal-json');
+  if (terminalJson) {
+    var jsonObj = {
+      name: "Kai Wang",
+      role: "Senior ML Engineer",
+      company: "TikTok",
+      focus: ["RecSys", "Game AI"],
+      education: "M.S. @ UCSD",
+      prev: ["Tencent", "ByteDance"]
+    };
+
+    function syntaxHighlight(json) {
+      return json
+        .replace(/"([^"]+)":/g, '<span class="json-key">"$1"</span>:')
+        .replace(/: "([^"]+)"/g, ': <span class="json-string">"$1"</span>')
+        .replace(/\[/g, '<span class="json-bracket">[</span>')
+        .replace(/\]/g, '<span class="json-bracket">]</span>')
+        .replace(/"(RecSys|Game AI|Tencent|ByteDance)"/g, '<span class="json-array-string">"$1"</span>');
+    }
+
+    var jsonStr = JSON.stringify(jsonObj, null, 2);
+    terminalJson.innerHTML = syntaxHighlight(jsonStr);
+  }
+
   // ========== Dark Mode ==========
   var themeToggle = document.getElementById('theme-toggle');
   var savedTheme = localStorage.getItem('theme');
