@@ -1,517 +1,450 @@
 <!DOCTYPE html>
-<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->
-<!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->
-<!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->
+<html lang="en">
 <head>
-  <title>Kai Wang</title>
+  <title>Kai Wang - ML Engineer</title>
 
   <!-- Meta -->
   <meta charset="utf-8">
-  
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="A beautiful Jekyll theme for creating resume">
+  <meta name="description" content="Kai Wang - Senior ML Engineer | RecSys Researcher | Game AI Enthusiast">
+  <meta name="theme-color" content="#4a90d9">
 
   <!-- Favicon -->
   <link rel="shortcut icon" href="favicon.ico">
 
-  <!-- Global CSS -->
-  <link rel="stylesheet" href="/assets/plugins/bootstrap/css/bootstrap.min.css">
+  <!-- Preconnect for performance -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-  <!-- Plugins CSS -->
-  <link rel="stylesheet" href="/assets/plugins/font-awesome/css/all.css">
+  <!-- Google Fonts: Inter + JetBrains Mono -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome 6 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- AOS - Animate On Scroll -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
 
   <!-- Theme CSS -->
   <link id="theme-style" rel="stylesheet" href="/assets/css/main.css">
-  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-  <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
 </head>
 
+
 <body>
-  <div class="wrapper">
-    
-<div class="sidebar-wrapper">
-
-  <div class="profile-container">
-
-    
-    <img class="avatar" src="/assets/images/profile2.png" alt="profile picture" />
-    
-
-    
-    <h1 class="name">Kai Wang</h1>
-    
-
-    
-    <h3 class="tagline">Senior Machine Learning Engineer at TikTok</h3>
-    
-
-  </div><!--//profile-container-->
-
-  <div class="contact-container container-block">
-  <ul class="list-unstyled contact-list">
-
-    
-    <li class="email"><i class="fas fa-envelope"></i>
-      <a href="mailto:wangjinjie722[at]gmail.com">wangjinjie722[at]gmail.com</a>
-    </li>
-    
-
-    
-
-    
-
-    
-    <li class="linkedin"><i class="fab fa-linkedin"></i>
-      <a href="https://www.linkedin.com/in/kai-wang-385715111/" target="_blank">Kai Wang</a>
-    </li>
-    
-
-    
-    <li class="github"><i class="fab fa-github"></i>
-      <a href="http://github.com/wangjinjie722" target="_blank">wangjinjie722</a>
-    </li>
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-  </ul>
-</div><!--//contact-container-->
-
-
   
+<nav class="navbar" id="navbar">
+  <div class="navbar-inner">
+    <a href="#hero" class="navbar-brand">Kai Wang</a>
+    <div class="nav-right">
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#experience" class="nav-link">Experience</a></li>
+        <li><a href="#education" class="nav-link">Education</a></li>
+        <li><a href="#publications" class="nav-link">Publications</a></li>
+        </ul>
+      <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
+        <i class="fas fa-moon"></i>
+        <i class="fas fa-sun"></i>
+      </button>
+      <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </div>
+</nav>
 
 
-  
-
-<div class="interests-container container-block">
-
-  <h2 class="container-block-title">
-    Personal Interests
-  </h2>
-
-  <ul class="list-unstyled interests-list">
+  <main>
     
-
+<section class="hero" id="hero">
+  <canvas id="hero-canvas"></canvas>
+  <div class="hero-content">
+    <div class="hero-avatar">
+      <img src="/assets/images/profile2.png" alt="Kai Wang" />
+    </div>
+    <h1 class="hero-title">Hi, I'm <span class="highlight">Kai Wang</span></h1>
+    <div class="hero-typewriter">
+      <span id="typewriter"></span><span class="cursor">|</span>
+    </div>
+    <div class="hero-links">
       
-      <li>Hiking</li>
+      <a href="mailto:wangjinjie722@gmail.com" aria-label="Email" class="hero-icon" data-tooltip="Email me">
+        <i class="fas fa-envelope"></i>
+      </a>
       
-
-    
-
       
-      <li><a href="https://www.google.com/maps/d/u/0/edit?mid=17LNQyXGDYA2TEIECT1Jg5Vr1IyIMQ4cj&usp=sharing">Traveling[click_me]</a></li>
+      <a href="https://www.linkedin.com/in/kai-wang-822870170/" target="_blank" rel="noopener" aria-label="LinkedIn" class="hero-icon" data-tooltip="LinkedIn">
+        <i class="fab fa-linkedin"></i>
+      </a>
       
+      
+      <a href="https://github.com/wangjinjie722" target="_blank" rel="noopener" aria-label="GitHub" class="hero-icon" data-tooltip="GitHub">
+        <i class="fab fa-github"></i>
+      </a>
+      
+    </div>
+  </div>
+  <a href="#about" class="scroll-indicator" aria-label="Scroll down">
+    <i class="fas fa-chevron-down"></i>
+  </a>
+</section>
 
-    
-  </ul>
-
-</div><!--//interests-->
 
 
 
-  
-
-</div><!--//sidebar-wrapper-->
-
-
-    <div class="main-wrapper">
-        
-
-<section class="section summary-section">
-
-  <h2 class="section-title">
-    <span class="fa-stack fa-xs">
-      <i class="fas fa-circle fa-stack-2x"></i>
-      <i class="fas fa-user fa-stack-1x fa-inverse"></i>
-    </span>
-    About Me
-  </h2>
-
-  <div class="summary">
-    
-<p>Hi, there! I am currently a senior machine learning engineer at <a href="https://www.tiktok.com/">TikTok</a>. Ex @ Tencent Game, <a href="https://guangzi.qq.com/">Lightspeed &amp; Quantum Studios Group</a>.
-Prior to this, I obtained my M.S. degree from <a href="http://www.ece.ucsd.edu/">UC San Diego</a>, 
+<section class="section about-section" id="about">
+  <div class="container">
+    <h2 class="section-title" data-aos="fade-up">About Me</h2>
+    <div class="about-content" data-aos="fade-up" data-aos-delay="100">
+      <div class="about-text">
+        <p>Hi, there! I am currently a senior machine learning engineer at <a href="https://www.tiktok.com/">TikTok</a>. Ex @ Tencent Game, <a href="https://guangzi.qq.com/">Lightspeed &amp; Quantum Studios Group</a>.
+Prior to this, I obtained my M.S. degree from <a href="http://www.ece.ucsd.edu/">UC San Diego</a>,
 advised by Prof. <a href="https://pengtaoxie.github.io/">Pengtao Xie</a> and Prof. <a href="https://cseweb.ucsd.edu/~jmcauley/">Julian McAuley</a>,
 and my B.E. degree from <a href="http://en.nwpu.edu.cn/">Northwestern Polytechnical University(NPU)</a>, respectively.</p>
 
-<p>My research interest includes Applied Machine Learning in recommender system and game industry. Please feel free to find my resume <a href="../assets/images/KaiWang_resume_2024.pdf">here</a>.</p>
+<p>My research interest includes Applied Machine Learning in recommender system and game industry.</p>
 
-  </div><!--//summary-->
-    
-</section><!--//section-->
-
-
-
-
-
-<section class="section experiences-section">
-  <h2 class="section-title">
-    <span class="fa-stack fa-xs">
-      <i class="fas fa-circle fa-stack-2x"></i>
-      <i class="fas fa-briefcase fa-stack-1x fa-inverse"></i>
-    </span>
-    Professional Experiences
-  </h2>
-
-  
-  <div class="item">
-
-    <div class="meta">
-      <span class="pull-left"><img src=../assets/images/tiktok2.png width="50px" height="50px" style="float: left; margin-right: 10px" /></span>
-      <div class="upper-row">
-        <h3 class="job-title">Machine Learning Engineer</h3>
-        <div class="time">May. 2022 - Present</div>
-      </div><!--//upper-row-->
-
-      <div class="company">TikTok</div>
-
-    </div><!--//meta-->
-
-    
-    <div class="details">
-      <p>TikTok Social recommender system, ranking model owner.</p>
-
-    </div><!--//details-->
-    
-
-  </div><!--//item-->
-  
-  <div class="item">
-
-    <div class="meta">
-      <span class="pull-left"><img src=../assets/images/lolm2.png width="50px" height="50px" style="float: left; margin-right: 10px" /></span>
-      <div class="upper-row">
-        <h3 class="job-title">Machine Learning Researcher</h3>
-        <div class="time">Mar. 2021 - May. 2022</div>
-      </div><!--//upper-row-->
-
-      <div class="company">Tencent</div>
-
-    </div><!--//meta-->
-
-    
-    <div class="details">
-      <p>League of Legend - Wild Rift &amp; CN, matching system and skill-level prediction.</p>
-
-    </div><!--//details-->
-    
-
-  </div><!--//item-->
-  
-  <div class="item">
-
-    <div class="meta">
-      <span class="pull-left"><img src=../assets/images/bd.png width="50px" height="50px" style="float: left; margin-right: 10px" /></span>
-      <div class="upper-row">
-        <h3 class="job-title">Machine Learning Engineer Intern</h3>
-        <div class="time">Sept. 2020 - Nov.2020</div>
-      </div><!--//upper-row-->
-
-      <div class="company">ByteDance</div>
-
-    </div><!--//meta-->
-
-    
-    <div class="details">
-      <p>Short video recommender system, watermelon video.</p>
-
-    </div><!--//details-->
-    
-
-  </div><!--//item-->
-  
-  <div class="item">
-
-    <div class="meta">
-      <span class="pull-left"><img src=../assets/images/jacob.png width="50px" height="50px" style="float: left; margin-right: 10px" /></span>
-      <div class="upper-row">
-        <h3 class="job-title">Summer Research Intern & Research Assistant</h3>
-        <div class="time">Mar. 2020 - Aug.2020</div>
-      </div><!--//upper-row-->
-
-      <div class="company">University of California, San Diego</div>
-
-    </div><!--//meta-->
-
-    
-    <div class="details">
+      </div>
       
-
-    </div><!--//details-->
-    
-
-  </div><!--//item-->
-  
-  <div class="item">
-
-    <div class="meta">
-      <span class="pull-left"><img src=../assets/images/txgame.png width="50px" height="50px" style="float: left; margin-right: 10px" /></span>
-      <div class="upper-row">
-        <h3 class="job-title">Machine Learning Engineer Intern</h3>
-        <div class="time">Oct. 2019 - Feb.2020</div>
-      </div><!--//upper-row-->
-
-      <div class="company">Tencent</div>
-
-    </div><!--//meta-->
-
-    
-    <div class="details">
-      <p>Game community recommender system</p>
-
-    </div><!--//details-->
-    
-
-  </div><!--//item-->
-  
-  <div class="item">
-
-    <div class="meta">
-      <span class="pull-left"><img src=../assets/images/pingan.png width="50px" height="50px" style="float: left; margin-right: 10px" /></span>
-      <div class="upper-row">
-        <h3 class="job-title">Machine Learning Research Intern</h3>
-        <div class="time">Jun. 2019 - Sept.2019</div>
-      </div><!--//upper-row-->
-
-      <div class="company">PingAn Tech</div>
-
-    </div><!--//meta-->
-
-    
-    <div class="details">
-      <p>Medical deep &amp; reinforcement learning</p>
-
-    </div><!--//details-->
-    
-
-  </div><!--//item-->
-  
-
-</section><!--//section-->
-
-
-
-
-
-  
-
-  
-  <section class="section educations-section">
-
-    <h2 class="section-title">
-      <span class="fa-stack fa-xs">
-        <i class="fas fa-circle fa-stack-2x"></i>
-        <i class="fas fa-graduation-cap fa-stack-1x fa-inverse"></i>
-      </span>
-      Education
-    </h2>
-
-    
-    <div class="item">
-
-      <div class="meta">
-        <span class="pull-left"><img src=../assets/images/ucsd_seal.png width="50px" height="50px" style="float: left; margin-right: 10px" /></span>
-        <div class="upper-row">
-          
-          <h3 class="degree">M.S. in Electrical and Computer Engineering</h3>
-          <div class="time">Sept. 2018 - Dec. 2020</div>
-        </div><!--//upper-row-->
-
-        <div class="university">University of California San Diego</div>
-      </div><!--//meta-->
-
+      <a href="../assets/images/KaiWang_resume_2024.pdf" class="btn-resume" target="_blank" rel="noopener">
+        <i class="fas fa-download"></i> Download Resume
+      </a>
       
-      <div class="details">
-        
-
-      </div><!--//details-->
-      
-
-    </div><!--//item-->
-    
-    <div class="item">
-
-      <div class="meta">
-        <span class="pull-left"><img src=../assets/images/npu_seal.png width="50px" height="50px" style="float: left; margin-right: 10px" /></span>
-        <div class="upper-row">
-          
-          <h3 class="degree">B.E. in Aerospace Engineering</h3>
-          <div class="time">Sept. 2014 - Jul. 2018</div>
-        </div><!--//upper-row-->
-
-        <div class="university">Northwestern Polytechnical University</div>
-      </div><!--//meta-->
-
-      
-      <div class="details">
-        
-
-      </div><!--//details-->
-      
-
-    </div><!--//item-->
-    
-
-  </section><!--//section-->
-  
-
-
-
-
-
-
-<section class="section publications-section">
-
-  <h2 class="section-title">
-    <span class="fa-stack fa-xs">
-      <i class="fas fa-circle fa-stack-2x"></i>
-      <i class="fas fa-file-alt fa-stack-1x fa-inverse"></i>
-    </span>
-    Publications
-  </h2>
-
-  
-  <div class="intro">
-    
-
-  </div><!--//intro-->
-  
-  
-  <table width="100%" border="0">
-  
-  <tr>
-    <td width="25%" align="left">
-      <a href=../assets/images/cupid.png><img src=../assets/images/cupid.png width="250px" alt="" ></a>
-    </td>
-    <td width="75%">
-    <div class="item">
-      
-        <li><a href="../assets/images/2024CUPID.pdf">CUPID: Improving Battle Fairness and Position Satisfaction in Online MOBA Games with a Re-matchmaking System</a></li>
-      
-      <div class="publication-authors"><p>Ge Fan, Chaoyun Zhang, <strong>Kai Wang</strong>, Yingjie Li, Junyang Chen, Zenglin Xu</p>
-</div>
-      <div class="publication-conference"><p>CSCW2024 [<a href="https://arxiv.org/abs/2406.19720">paper</a>]</p>
-</div>
-      <div class="publication-details"><p>Matching systems in Game Industry, applied in a popular MOBA game.</p>
- </div>
-    </div><!--//item-->
-    </td>
-  </tr>
-  
-  <tr>
-    <td width="25%" align="left">
-      <a href=../assets/images/trueskill.png><img src=../assets/images/trueskill.png width="250px" alt="" ></a>
-    </td>
-    <td width="75%">
-    <div class="item">
-      
-        <li><a href="https://arxiv.org/abs/2208.07704">QuickSkill Novice Skill Estimation in Online Multiplayer Games</a></li>
-      
-      <div class="publication-authors"><p><strong>Kai Wang</strong>, Chaoyun Zhang, Hao Chen, Ge Fan, Yingjie Li, Lifang Wu, Bingchao Zheng</p>
-</div>
-      <div class="publication-conference"><p>CIKM2022 [<a href="https://arxiv.org/abs/2208.07704">paper</a>]</p>
-</div>
-      <div class="publication-details"><p>A novel ML method in Game Industry, applied in a popular MOBA game.</p>
- </div>
-    </div><!--//item-->
-    </td>
-  </tr>
-  
-  <tr>
-    <td width="25%" align="left">
-      <a href=../assets/images/mv_han.png><img src=../assets/images/mv_han.png width="250px" alt="" ></a>
-    </td>
-    <td width="75%">
-    <div class="item">
-      
-        <li><a href="../assets/images/2022MVHAN.pdf">MV-HAN A Hybrid Attentive Networks based Multi-View Learning Model for Large-scale Contents Recommendation</a></li>
-      
-      <div class="publication-authors"><p>Ge Fan, Chaoyun Zhang, <strong>Kai Wang</strong>, Junyang Chen</p>
-</div>
-      <div class="publication-conference"><p>ASE2022 [<a href="https://dl.acm.org/doi/abs/10.1145/3551349.3559496">paper</a>]</p>
-</div>
-      <div class="publication-details"><p>Applied in Tencent Recommender Systems.</p>
- </div>
-    </div><!--//item-->
-    </td>
-  </tr>
-  
-  <tr>
-    <td width="25%" align="left">
-      <a href=../assets/images/adnfm.png><img src=../assets/images/adnfm.png width="250px" alt="" ></a>
-    </td>
-    <td width="75%">
-    <div class="item">
-      
-        <li><a href="https://dl.acm.org/doi/abs/10.1145/3512850.3512852">AdnFM -- An Attentive DenseNet based Factorization Machine for CTR Prediction</a></li>
-      
-      <div class="publication-authors"><p><strong>Kai Wang</strong>, Chunxu Shen, Chaoyun Zhang, Wenye Ma</p>
-</div>
-      <div class="publication-conference"><p>ICCDE2022 [<a href="https://dl.acm.org/doi/abs/10.1145/3512850.3512852">paper</a>]</p>
-</div>
-      <div class="publication-details"><p>A new model for CTR prediction.</p>
- </div>
-    </div><!--//item-->
-    </td>
-  </tr>
-  
-  </table>  
-
-</section><!--//section-->
-
-
     </div>
   </div>
-
-  <footer class="footer">
-    <div class="text-center">
-        <!--/* This template is released under the Creative Commons Attribution 3.0 License. Please keep the attribution link below when using for your own project. Thank you for your support. :) If you'd like to use the template without the attribution, you can check out other license options via our website: themes.3rdwavemedia.com */-->
-        <small class="copyright"><p>"Get normal things, interesting jobs, nice apartments, and someone hiking together."</p>
-</small>
-    </div><!--//container-->
-</footer><!--//footer-->
+</section>
 
 
-<!-- Javascript -->
-<script type="text/javascript" src="/assets/plugins/jquery-1.11.3.min.js"></script>
-<script type="text/javascript" src="/assets/plugins/bootstrap/js/bootstrap.min.js"></script>
-
-<!-- custom js -->
-<script type="text/javascript" src="/assets/js/main.js"></script>
 
 
-  <!-- Analytics -->
+
+<section class="section experience-section" id="experience">
+  <div class="container">
+    <h2 class="section-title" data-aos="fade-up">Professional Experience</h2>
+    <div class="timeline">
+      <div class="timeline-progress" id="timeline-progress"></div>
+      
+      <div class="timeline-item" data-aos="fade-right" data-aos-delay="100">
+        <div class="timeline-dot">
+          <img src="../assets/images/tiktok2.png" alt="TikTok" />
+        </div>
+        <div class="timeline-card">
+          <div class="timeline-header">
+            <h3 class="timeline-role">Senior Machine Learning Engineer</h3>
+            <span class="timeline-time">May. 2022 - Present</span>
+          </div>
+          <div class="timeline-company">TikTok</div>
+          
+          <div class="timeline-details">
+            <p>TikTok Social recommender system, ranking model owner.</p>
+
+          </div>
+          
+        </div>
+      </div>
+      
+      <div class="timeline-item" data-aos="fade-right" data-aos-delay="200">
+        <div class="timeline-dot">
+          <img src="../assets/images/lolm2.png" alt="Tencent" />
+        </div>
+        <div class="timeline-card">
+          <div class="timeline-header">
+            <h3 class="timeline-role">Machine Learning Researcher</h3>
+            <span class="timeline-time">Mar. 2021 - May. 2022</span>
+          </div>
+          <div class="timeline-company">Tencent</div>
+          
+          <div class="timeline-details">
+            <p>League of Legend - Wild Rift &amp; CN, matching system and skill-level prediction.</p>
+
+          </div>
+          
+        </div>
+      </div>
+      
+      <div class="timeline-item" data-aos="fade-right" data-aos-delay="300">
+        <div class="timeline-dot">
+          <img src="../assets/images/bd.png" alt="ByteDance" />
+        </div>
+        <div class="timeline-card">
+          <div class="timeline-header">
+            <h3 class="timeline-role">Machine Learning Engineer Intern</h3>
+            <span class="timeline-time">Sept. 2020 - Nov.2020</span>
+          </div>
+          <div class="timeline-company">ByteDance</div>
+          
+          <div class="timeline-details">
+            <p>Short video recommender system, watermelon video.</p>
+
+          </div>
+          
+        </div>
+      </div>
+      
+      <div class="timeline-item" data-aos="fade-right" data-aos-delay="400">
+        <div class="timeline-dot">
+          <img src="../assets/images/jacob.png" alt="University of California, San Diego" />
+        </div>
+        <div class="timeline-card">
+          <div class="timeline-header">
+            <h3 class="timeline-role">Summer Research Intern & Research Assistant</h3>
+            <span class="timeline-time">Mar. 2020 - Aug.2020</span>
+          </div>
+          <div class="timeline-company">University of California, San Diego</div>
+          
+          <div class="timeline-details">
+            
+
+          </div>
+          
+        </div>
+      </div>
+      
+      <div class="timeline-item" data-aos="fade-right" data-aos-delay="500">
+        <div class="timeline-dot">
+          <img src="../assets/images/txgame.png" alt="Tencent" />
+        </div>
+        <div class="timeline-card">
+          <div class="timeline-header">
+            <h3 class="timeline-role">Machine Learning Engineer Intern</h3>
+            <span class="timeline-time">Oct. 2019 - Feb.2020</span>
+          </div>
+          <div class="timeline-company">Tencent</div>
+          
+          <div class="timeline-details">
+            <p>Game community recommender system</p>
+
+          </div>
+          
+        </div>
+      </div>
+      
+      <div class="timeline-item" data-aos="fade-right" data-aos-delay="600">
+        <div class="timeline-dot">
+          <img src="../assets/images/pingan.png" alt="PingAn Tech" />
+        </div>
+        <div class="timeline-card">
+          <div class="timeline-header">
+            <h3 class="timeline-role">Machine Learning Research Intern</h3>
+            <span class="timeline-time">Jun. 2019 - Sept.2019</span>
+          </div>
+          <div class="timeline-company">PingAn Tech</div>
+          
+          <div class="timeline-details">
+            <p>Medical deep &amp; reinforcement learning</p>
+
+          </div>
+          
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</section>
+
+
+
+
+
+<section class="section education-section" id="education">
+  <div class="container">
+    <h2 class="section-title" data-aos="fade-up">Education</h2>
+    <div class="education-grid">
+      
+      <div class="education-card" data-aos="fade-up" data-aos-delay="150">
+        <div class="education-logo">
+          <img src="../assets/images/ucsd_seal.png" alt="University of California San Diego" />
+        </div>
+        <div class="education-info">
+          <h3 class="education-degree">M.S. in Electrical and Computer Engineering</h3>
+          <div class="education-university">University of California San Diego</div>
+          <div class="education-time">Sept. 2018 - Dec. 2020</div>
+        </div>
+      </div>
+      
+      <div class="education-card" data-aos="fade-up" data-aos-delay="300">
+        <div class="education-logo">
+          <img src="../assets/images/npu_seal.png" alt="Northwestern Polytechnical University" />
+        </div>
+        <div class="education-info">
+          <h3 class="education-degree">B.E. in Aerospace Engineering</h3>
+          <div class="education-university">Northwestern Polytechnical University</div>
+          <div class="education-time">Sept. 2014 - Jul. 2018</div>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</section>
+
+
+
+
+
+<section class="section publications-section" id="publications">
+  <div class="container">
+    <h2 class="section-title" data-aos="fade-up">Publications</h2>
+    <div class="publications-grid">
+      
+      <div class="publication-card" data-aos="fade-up" data-aos-delay="100">
+        <div class="publication-thumb">
+          <img src="../assets/images/cupid.png" alt="CUPID: Improving Battle Fairness and Position Satisfaction in Online MOBA Games with a Re-matchmaking System" />
+          
+          <a href="../assets/images/2024CUPID.pdf" class="publication-overlay" target="_blank" rel="noopener">
+            <span><i class="fas fa-external-link-alt"></i> View Paper</span>
+          </a>
+          
+        </div>
+        <div class="publication-info">
+          <h3 class="publication-title">
+            
+            <a href="../assets/images/2024CUPID.pdf" target="_blank" rel="noopener">CUPID: Improving Battle Fairness and Position Satisfaction in Online MOBA Games with a Re-matchmaking System</a>
+            
+          </h3>
+          <div class="publication-authors">Ge Fan, Chaoyun Zhang, <strong class="author-highlight">Kai Wang</strong>, Yingjie Li, Junyang Chen, Zenglin Xu</div>
+          <div class="publication-conference"><p>CSCW2024 [<a href="https://arxiv.org/abs/2406.19720">paper</a>]</p>
+</div>
+          
+          <div class="publication-details">Matching systems in Game Industry, applied in a popular MOBA game.</div>
+          
+        </div>
+      </div>
+      
+      <div class="publication-card" data-aos="fade-up" data-aos-delay="200">
+        <div class="publication-thumb">
+          <img src="../assets/images/trueskill.png" alt="QuickSkill Novice Skill Estimation in Online Multiplayer Games" />
+          
+          <a href="https://arxiv.org/abs/2208.07704" class="publication-overlay" target="_blank" rel="noopener">
+            <span><i class="fas fa-external-link-alt"></i> View Paper</span>
+          </a>
+          
+        </div>
+        <div class="publication-info">
+          <h3 class="publication-title">
+            
+            <a href="https://arxiv.org/abs/2208.07704" target="_blank" rel="noopener">QuickSkill Novice Skill Estimation in Online Multiplayer Games</a>
+            
+          </h3>
+          <div class="publication-authors"><strong class="author-highlight">Kai Wang</strong>, Chaoyun Zhang, Hao Chen, Ge Fan, Yingjie Li, Lifang Wu, Bingchao Zheng</div>
+          <div class="publication-conference"><p>CIKM2022 [<a href="https://arxiv.org/abs/2208.07704">paper</a>]</p>
+</div>
+          
+          <div class="publication-details">A novel ML method in Game Industry, applied in a popular MOBA game.</div>
+          
+        </div>
+      </div>
+      
+      <div class="publication-card" data-aos="fade-up" data-aos-delay="300">
+        <div class="publication-thumb">
+          <img src="../assets/images/mv_han.png" alt="MV-HAN A Hybrid Attentive Networks based Multi-View Learning Model for Large-scale Contents Recommendation" />
+          
+          <a href="../assets/images/2022MVHAN.pdf" class="publication-overlay" target="_blank" rel="noopener">
+            <span><i class="fas fa-external-link-alt"></i> View Paper</span>
+          </a>
+          
+        </div>
+        <div class="publication-info">
+          <h3 class="publication-title">
+            
+            <a href="../assets/images/2022MVHAN.pdf" target="_blank" rel="noopener">MV-HAN A Hybrid Attentive Networks based Multi-View Learning Model for Large-scale Contents Recommendation</a>
+            
+          </h3>
+          <div class="publication-authors">Ge Fan, Chaoyun Zhang, <strong class="author-highlight">Kai Wang</strong>, Junyang Chen</div>
+          <div class="publication-conference"><p>ASE2022 [<a href="https://dl.acm.org/doi/abs/10.1145/3551349.3559496">paper</a>]</p>
+</div>
+          
+          <div class="publication-details">Applied in Tencent Recommender Systems.</div>
+          
+        </div>
+      </div>
+      
+      <div class="publication-card" data-aos="fade-up" data-aos-delay="400">
+        <div class="publication-thumb">
+          <img src="../assets/images/adnfm.png" alt="AdnFM -- An Attentive DenseNet based Factorization Machine for CTR Prediction" />
+          
+          <a href="https://dl.acm.org/doi/abs/10.1145/3512850.3512852" class="publication-overlay" target="_blank" rel="noopener">
+            <span><i class="fas fa-external-link-alt"></i> View Paper</span>
+          </a>
+          
+        </div>
+        <div class="publication-info">
+          <h3 class="publication-title">
+            
+            <a href="https://dl.acm.org/doi/abs/10.1145/3512850.3512852" target="_blank" rel="noopener">AdnFM -- An Attentive DenseNet based Factorization Machine for CTR Prediction</a>
+            
+          </h3>
+          <div class="publication-authors"><strong class="author-highlight">Kai Wang</strong>, Chunxu Shen, Chaoyun Zhang, Wenye Ma</div>
+          <div class="publication-conference"><p>ICCDE2022 [<a href="https://dl.acm.org/doi/abs/10.1145/3512850.3512852">paper</a>]</p>
+</div>
+          
+          <div class="publication-details">A new model for CTR prediction.</div>
+          
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</section>
+
+
+
+
+
+  </main>
+
+  
+<footer class="footer" id="footer">
+  <div class="container">
+    <div class="footer-content">
+      <div class="footer-links">
+        
+        <a href="mailto:wangjinjie722@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+        
+        
+        <a href="https://www.linkedin.com/in/kai-wang-822870170/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+        
+        
+        <a href="https://github.com/wangjinjie722" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        
+      </div>
+      <div class="neural-playground-wrapper">
+        <p class="playground-hint"><i class="fas fa-mouse-pointer"></i> Click to spawn neurons</p>
+        <canvas id="neural-playground"></canvas>
+      </div>
+      <div class="footer-quote">
+        <p>"Get normal things, interesting jobs, nice apartments, and someone hiking together."</p>
+
+      </div>
+      <div class="footer-copyright">
+        &copy; 2026 Kai Wang. Built with Jekyll.
+      </div>
+    </div>
+  </div>
+</footer>
+
+  <canvas id="neural-canvas" style="display:none;position:fixed;top:0;left:0;width:100%;height:100%;z-index:10000;pointer-events:none;"></canvas>
+<div id="easter-egg-msg" style="display:none;position:fixed;top:50%;left:50%;transform:translate(-50%,-50%);z-index:10001;color:#4a90d9;font-size:2rem;font-weight:700;font-family:'JetBrains Mono',monospace;text-align:center;pointer-events:none;text-shadow:0 0 20px rgba(74,144,217,0.5);">
+  You found the hidden layer! &#129504;
+</div>
+
+  <!-- AOS Library -->
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+<!-- Main JS -->
+<script src="/assets/js/main.js"></script>
+
+
+<!-- Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-PT9LJDYPGD"></script>
 <script>
-  (function (i, s, o, g, r, a, m) {
-    i['GoogleAnalyticsObject'] = r;
-    i[r] = i[r] || function () {
-      (i[r].q = i[r].q || []).push(arguments)
-    }, i[r].l = 1 * new Date();
-    a = s.createElement(o),
-      m = s.getElementsByTagName(o)[0];
-    a.async = 1;
-    a.src = g;
-    m.parentNode.insertBefore(a, m)
-  })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
-  ga('create', 'UA-83979019-1', 'auto');
-  ga('send', 'pageview');
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-PT9LJDYPGD');
 </script>
 
+
 </body>
-
 </html>
-

@@ -1,37 +1,30 @@
 {% assign experiences = site.data.data.experiences %}
 {% if experiences %}
-<section class="section experiences-section">
-  <h2 class="section-title">
-    <span class="fa-stack fa-xs">
-      <i class="fas fa-circle fa-stack-2x"></i>
-      <i class="fas fa-briefcase fa-stack-1x fa-inverse"></i>
-    </span>
-    Professional Experiences
-  </h2>
-
-  {% for experience in experiences %}
-  <div class="item">
-
-    <div class="meta">
-      <span class="pull-left"><img src={{experience.logo}} width="50px" height="50px" style="float: left; margin-right: 10px" /></span>
-      <div class="upper-row">
-        <h3 class="job-title">{{ experience.role }}</h3>
-        <div class="time">{{ experience.time }}</div>
-      </div><!--//upper-row-->
-
-      <div class="company">{{ experience.company  }}</div>
-
-    </div><!--//meta-->
-
-    {% if experience.details %}
-    <div class="details">
-      {{ experience.details | markdownify }}
-    </div><!--//details-->
-    {% endif %}
-
-  </div><!--//item-->
-  {% endfor %}
-
-</section><!--//section-->
+<section class="section experience-section" id="experience">
+  <div class="container">
+    <h2 class="section-title" data-aos="fade-up">Professional Experience</h2>
+    <div class="timeline">
+      <div class="timeline-progress" id="timeline-progress"></div>
+      {% for experience in experiences %}
+      <div class="timeline-item" data-aos="fade-right" data-aos-delay="{{ forloop.index | times: 100 }}">
+        <div class="timeline-dot">
+          <img src="{{ experience.logo }}" alt="{{ experience.company }}" />
+        </div>
+        <div class="timeline-card">
+          <div class="timeline-header">
+            <h3 class="timeline-role">{{ experience.role }}</h3>
+            <span class="timeline-time">{{ experience.time }}</span>
+          </div>
+          <div class="timeline-company">{{ experience.company }}</div>
+          {% if experience.details %}
+          <div class="timeline-details">
+            {{ experience.details | markdownify }}
+          </div>
+          {% endif %}
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
 {% endif %}
-

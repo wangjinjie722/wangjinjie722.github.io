@@ -1,42 +1,36 @@
 {% assign publications = site.data.data.publications %}
 {% if publications %}
-<section class="section publications-section">
-
-  <h2 class="section-title">
-    <span class="fa-stack fa-xs">
-      <i class="fas fa-circle fa-stack-2x"></i>
-      <i class="fas fa-file-alt fa-stack-1x fa-inverse"></i>
-    </span>
-    {{ publications.title }}
-  </h2>
-
-  {% if publications.intro %}
-  <div class="intro">
-    {{ publications.intro | markdownify }}
-  </div><!--//intro-->
-  {% endif %}
-  
-  <table width="100%" border="0">
-  {% for publication in publications.papers %}
-  <tr>
-    <td width="25%" align="left">
-      <a href={{ publication.intro }}><img src={{publication.intro}} width="250px" alt="" ></a>
-    </td>
-    <td width="75%">
-    <div class="item">
-      {% if publication.link %}
-        <li><a href="{{ publication.link }}">{{ publication.title }}</a></li>
-      {% else %}
-        <li>{{ publication.title }}</li>
-      {% endif %}
-      <div class="publication-authors">{{ publication.authors | markdownify}}</div>
-      <div class="publication-conference">{{ publication.conference |  markdownify }}</div>
-      <div class="publication-details">{{ publication.details | markdownify}} </div>
-    </div><!--//item-->
-    </td>
-  </tr>
-  {% endfor %}
-  </table>  
-
-</section><!--//section-->
+<section class="section publications-section" id="publications">
+  <div class="container">
+    <h2 class="section-title" data-aos="fade-up">{{ publications.title }}</h2>
+    <div class="publications-grid">
+      {% for publication in publications.papers %}
+      <div class="publication-card" data-aos="fade-up" data-aos-delay="{{ forloop.index | times: 100 }}">
+        <div class="publication-thumb">
+          <img src="{{ publication.intro }}" alt="{{ publication.title }}" />
+          {% if publication.link %}
+          <a href="{{ publication.link }}" class="publication-overlay" target="_blank" rel="noopener">
+            <span><i class="fas fa-external-link-alt"></i> View Paper</span>
+          </a>
+          {% endif %}
+        </div>
+        <div class="publication-info">
+          <h3 class="publication-title">
+            {% if publication.link %}
+            <a href="{{ publication.link }}" target="_blank" rel="noopener">{{ publication.title }}</a>
+            {% else %}
+            {{ publication.title }}
+            {% endif %}
+          </h3>
+          <div class="publication-authors">{{ publication.authors | replace: '__Kai Wang__', '<strong class="author-highlight">Kai Wang</strong>' }}</div>
+          <div class="publication-conference">{{ publication.conference | markdownify }}</div>
+          {% if publication.details %}
+          <div class="publication-details">{{ publication.details }}</div>
+          {% endif %}
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
 {% endif %}

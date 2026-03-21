@@ -1,0 +1,33 @@
+{% assign sidebar = site.data.data.sidebar %}
+<section class="hero" id="hero">
+  <canvas id="hero-canvas"></canvas>
+  <div class="hero-content">
+    <div class="hero-avatar">
+      <img src="{{ site.baseurl }}/assets/images/{{ sidebar.avatar }}" alt="{{ sidebar.name }}" />
+    </div>
+    <h1 class="hero-title">Hi, I'm <span class="highlight">{{ sidebar.name }}</span></h1>
+    <div class="hero-typewriter">
+      <span id="typewriter"></span><span class="cursor">|</span>
+    </div>
+    <div class="hero-links">
+      {% if sidebar.email %}
+      <a href="mailto:{{ sidebar.email }}" aria-label="Email" class="hero-icon" data-tooltip="Email me">
+        <i class="fas fa-envelope"></i>
+      </a>
+      {% endif %}
+      {% if sidebar.linkedin_url %}
+      <a href="{{ sidebar.linkedin_url }}" target="_blank" rel="noopener" aria-label="LinkedIn" class="hero-icon" data-tooltip="LinkedIn">
+        <i class="fab fa-linkedin"></i>
+      </a>
+      {% endif %}
+      {% if sidebar.github %}
+      <a href="https://github.com/{{ sidebar.github }}" target="_blank" rel="noopener" aria-label="GitHub" class="hero-icon" data-tooltip="GitHub">
+        <i class="fab fa-github"></i>
+      </a>
+      {% endif %}
+    </div>
+  </div>
+  <a href="#about" class="scroll-indicator" aria-label="Scroll down">
+    <i class="fas fa-chevron-down"></i>
+  </a>
+</section>

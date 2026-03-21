@@ -2,13 +2,14 @@
 layout: default
 ---
 
+{% include hero.html %}
 
 {% include career-profile.html %}
 
 {% include experiences.html %}
 
-{% unless site.data.data.sidebar.education %}
-  {% include education.html %}
-{% endunless %}
+{% include education.html %}
 
 {% include publications.html %}
+
+{% comment %}{% include skills.html %}{% endcomment %}

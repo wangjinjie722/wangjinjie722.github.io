@@ -1,65 +1,168 @@
-/* Extra small devices (phones, less than 768px) */
-@media (max-width: 767px) {
+/* ======= Responsive ======= */
 
-    body{
-        padding: 0;
+/* Tablet */
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 2.2rem;
+  }
+
+  .hero-typewriter {
+    font-size: 1rem;
+  }
+
+  .section-title {
+    font-size: 1.6rem;
+  }
+
+  .section {
+    padding: 60px 0;
+  }
+
+  .education-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .publications-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .timeline {
+    padding-left: 50px;
+
+    &::before {
+      left: 22px;
+      top: 42px;
+      bottom: 22px;
     }
+  }
 
-    .sidebar-wrapper {
-        position: static;
-        width: inherit;
+  .timeline-progress {
+    left: 22px;
+    top: 42px;
+  }
+
+  .timeline-dot {
+    left: -50px;
+    width: 44px;
+    height: 44px;
+
+    img {
+      width: 28px;
+      height: 28px;
     }
+  }
 
-    .main-wrapper {
-        padding: 30px;
+  .timeline-header {
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  /* Hamburger menu */
+  .hamburger {
+    display: flex;
+  }
+
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: 64px;
+    left: 0;
+    right: 0;
+    background: var(--navbar-bg);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    flex-direction: column;
+    padding: 20px 24px;
+    gap: 16px;
+    box-shadow: var(--shadow-md);
+    border-bottom: 1px solid var(--border-color);
+
+    &.open {
+      display: flex;
     }
+  }
 
-    .main-wrapper .time {
-        position: static;
-        display: block;
-        margin-top: 5px;
-    }
-
-    .main-wrapper .upper-row {
-        margin-bottom: 0;
-    }
-
-
+  /* Hide cursor glow on touch devices */
+  .cursor-glow {
+    display: none;
+  }
 }
-/* Small devices (tablets, 768px and up) */
-@media (min-width: 768px) {
 
+/* Mobile */
+@media (max-width: 480px) {
+  .hero-title {
+    font-size: 1.8rem;
+  }
 
+  .hero-avatar img {
+    width: 120px;
+    height: 120px;
+  }
+
+  .hero-typewriter {
+    font-size: 0.9rem;
+  }
+
+  .container {
+    padding: 0 16px;
+  }
+
+  .section-title {
+    font-size: 1.4rem;
+    margin-bottom: 32px;
+  }
+
+  .timeline-card {
+    padding: 16px;
+  }
+
+  .education-card {
+    padding: 20px;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .publication-info {
+    padding: 16px;
+  }
+
+  .nav-right {
+    gap: 12px;
+  }
+
+  .theme-toggle {
+    width: 36px;
+    height: 36px;
+    font-size: 0.9rem;
+  }
 }
 
-/* Medium devices (desktops, 992px and up) */
-@media (min-width: 992px) {
+/* Print */
+@media print {
+  .navbar,
+  .scroll-indicator,
+  .hero-links,
+  .footer-links,
+  .theme-toggle,
+  #neural-canvas,
+  #easter-egg-msg,
+  #hero-canvas,
+  .cursor-glow,
+  .timeline-progress {
+    display: none !important;
+  }
 
-    .skillset .level-title {
-        display: inline-block;
-        float: left;
-        width: 30%;
-        margin-bottom: 0;
-    }
+  .hero {
+    min-height: auto;
+    padding: 40px 0;
+  }
 
-    .skillset .level-bar {
-        display: inline-block;
-        width: 70%;
-        float: left;
-        position: relative;
-        top: 1px;
-    }
+  .section {
+    padding: 20px 0;
+  }
 
-
-}
-
-/* Large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {
-
-}
-
-
-/* Ex-Large devices (large desktops, 1200px and up) */
-@media (min-width: 1400px) {
-
+  [data-aos] {
+    opacity: 1 !important;
+    transform: none !important;
+  }
 }

@@ -1,10 +1,16 @@
-<!-- Javascript -->
-<script type="text/javascript" src="{{site.baseurl}}/assets/plugins/jquery-1.11.3.min.js"></script>
-<script type="text/javascript" src="{{site.baseurl}}/assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+<!-- AOS Library -->
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
 
-<!-- custom js -->
-<script type="text/javascript" src="{{site.baseurl}}/assets/js/main.js"></script>
+<!-- Main JS -->
+<script src="{{ site.baseurl }}/assets/js/main.js"></script>
 
-{% if site.analytics %}
-  {% include analytics.html %}
+{% if site.google_analytics %}
+<!-- Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id={{ site.google_analytics }}"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', '{{ site.google_analytics }}');
+</script>
 {% endif %}
