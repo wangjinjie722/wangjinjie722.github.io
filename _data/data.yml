@@ -8,7 +8,7 @@ sidebar:
 
     # Profile information
     name: Kai Wang
-    tagline: Senior ML Engineer @ TikTok
+    tagline: Senior ML Engineer @ Meta
     avatar: profile2.png
 
     # Contact links
@@ -19,14 +19,14 @@ sidebar:
 
     # Typewriter roles for hero section
     roles:
-      - "Senior ML Engineer @ TikTok"
+      - "Senior ML Engineer @ Meta"
       - "RecSys Researcher"
       - "Game AI Enthusiast"
 
 career-profile:
     title: About Me
     summary: |
-      Hi, there! I am currently a senior machine learning engineer at [TikTok](https://www.tiktok.com/). Ex @ Tencent Game, [Lightspeed & Quantum Studios Group](https://guangzi.qq.com/).
+      Hi, there! I am currently a senior machine learning engineer at [Meta](https://about.meta.com/), working on Instagram recommendation systems. Ex @ [TikTok](https://www.tiktok.com/), Tencent Game, [Lightspeed & Quantum Studios Group](https://guangzi.qq.com/).
       Prior to this, I obtained my M.S. degree from [UC San Diego](http://www.ece.ucsd.edu/),
       advised by Prof. [Pengtao Xie](https://pengtaoxie.github.io/) and Prof. [Julian McAuley](https://cseweb.ucsd.edu/~jmcauley/),
       and my B.E. degree from [Northwestern Polytechnical University(NPU)](http://en.nwpu.edu.cn/), respectively.
@@ -50,7 +50,13 @@ education:
 
 experiences:
     - role: Senior Machine Learning Engineer
-      time: May. 2022 - Present
+      time: Mar. 2026 - Present
+      logo: "../assets/images/meta.png"
+      company: Meta
+      details: Instagram recommendation system.
+
+    - role: Senior Machine Learning Engineer
+      time: May. 2022 - Mar. 2026
       logo: "../assets/images/tiktok2.png"
       company: TikTok
       details: TikTok Social recommender system, ranking model owner.

@@ -12,10 +12,10 @@ document.addEventListener('DOMContentLoaded', function () {
     var jsonObj = {
       name: "Kai Wang",
       role: "Senior ML Engineer",
-      company: "TikTok",
+      company: "Meta",
       focus: ["RecSys", "Game AI"],
       education: "M.S. @ UCSD",
-      prev: ["Tencent", "ByteDance"]
+      prev: ["TikTok", "Tencent", "ByteDance"]
     };
 
     function syntaxHighlight(json) {
@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', function () {
         .replace(/: "([^"]+)"/g, ': <span class="json-string">"$1"</span>')
         .replace(/\[/g, '<span class="json-bracket">[</span>')
         .replace(/\]/g, '<span class="json-bracket">]</span>')
-        .replace(/"(RecSys|Game AI|Tencent|ByteDance)"/g, '<span class="json-array-string">"$1"</span>');
+        .replace(/"(RecSys|Game AI|TikTok|Tencent|ByteDance)"/g, '<span class="json-array-string">"$1"</span>');
     }
 
     var jsonStr = JSON.stringify(jsonObj, null, 2);
@@ -55,7 +55,7 @@ document.addEventListener('DOMContentLoaded', function () {
   var typewriterEl = document.getElementById('typewriter');
   if (typewriterEl) {
     var roles = [
-      'Senior ML Engineer @ TikTok',
+      'Senior ML Engineer @ Meta',
       'RecSys Researcher',
       'Game AI Enthusiast',
     ];
