@@ -6,6 +6,81 @@ document.addEventListener('DOMContentLoaded', function () {
     offset: 80,
   });
 
+  // ========== Interactive Personal AI Console ==========
+  var assistantForm = document.getElementById('assistant-form');
+  var assistantInput = document.getElementById('assistant-input');
+  var assistantMessages = document.getElementById('ai-messages');
+  var assistantDataEl = document.getElementById('assistant-data');
+
+  if (assistantForm && assistantInput && assistantMessages && assistantDataEl) {
+    var assistantData = JSON.parse(assistantDataEl.textContent);
+    var profile = assistantData['career-profile'] || {};
+    var sidebarData = assistantData.sidebar || {};
+
+    function addAssistantMessage(text, type) {
+      var message = document.createElement('div');
+      message.className = 'ai-message ' + (type === 'user' ? 'user-message' : 'assistant-message');
+      message.textContent = text;
+      assistantMessages.appendChild(message);
+      assistantMessages.scrollTop = assistantMessages.scrollHeight;
+    }
+
+    function formatList(items, formatter) {
+      return (items || []).map(formatter).join('\n');
+    }
+
+    function assistantReply(rawCommand) {
+      var command = rawCommand.trim().toLowerCase();
+      if (!command) return 'Type /help to see what I can tell you.';
+      if (command === '/clear' || command === 'clear') {
+        assistantMessages.innerHTML = '';
+        return 'Conversation cleared. What would you like to inspect?';
+      }
+      if (command === '/help' || command === 'help' || command === '?') {
+        return 'Available commands:\n/about  /experience  /education  /publications  /contact\nYou can also ask natural questions like “What does Kai work on?”';
+      }
+      if (command.indexOf('about') >= 0 || command.indexOf('work on') >= 0 || command.indexOf('focus') >= 0) {
+        return (profile.summary || 'Kai works at the intersection of machine learning, recommendation systems, and games.')
+          .replace(/\[([^\]]+)\]\([^\)]+\)/g, '$1')
+          .replace(/\n+/g, ' ');
+      }
+      if (command.indexOf('experience') >= 0 || command.indexOf('career') >= 0 || command === '/exp') {
+        return formatList(assistantData.experiences, function (item) {
+          return item.time + ' · ' + item.role + ' @ ' + item.company;
+        });
+      }
+      if (command.indexOf('education') >= 0 || command.indexOf('school') >= 0) {
+        return formatList(assistantData.education, function (item) {
+          return item.degree + ' · ' + item.university + ' (' + item.time + ')';
+        });
+      }
+      if (command.indexOf('publication') >= 0 || command.indexOf('paper') >= 0 || command.indexOf('research') >= 0 || command === '/papers') {
+        return formatList(assistantData.publications && assistantData.publications.papers, function (item) {
+          return item.title + ' · ' + item.conference.replace(/\[\[[^\]]+\]\([^\)]+\)/g, '');
+        });
+      }
+      if (command.indexOf('contact') >= 0 || command.indexOf('email') >= 0 || command.indexOf('reach') >= 0) {
+        return 'Email Kai at ' + (sidebarData.email || 'the email link in the page footer') + '.\nLinkedIn: ' + (sidebarData.linkedin_url || 'available in the social links');
+      }
+      return 'I did not recognize that command. Try /help, /about, /experience, /education, /publications, or /contact.';
+    }
+
+    function submitAssistantCommand(command) {
+      if (!command.trim()) return;
+      addAssistantMessage(command, 'user');
+      window.setTimeout(function () { addAssistantMessage(assistantReply(command), 'assistant'); }, 180);
+      assistantInput.value = '';
+    }
+
+    assistantForm.addEventListener('submit', function (event) {
+      event.preventDefault();
+      submitAssistantCommand(assistantInput.value);
+    });
+    assistantMessages.parentElement.querySelectorAll('[data-command]').forEach(function (button) {
+      button.addEventListener('click', function () { submitAssistantCommand(button.getAttribute('data-command')); });
+    });
+  }
+
   // ========== Terminal JSON Animation ==========
   var terminalJson = document.getElementById('terminal-json');
   if (terminalJson) {

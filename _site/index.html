@@ -97,27 +97,38 @@
     </div>
     <!-- Right: terminal -->
     <div class="hero-right">
-      <div class="terminal">
+      <div class="ai-console" aria-label="Kai's interactive AI assistant">
         <div class="terminal-header">
           <span class="terminal-dot red"></span>
           <span class="terminal-dot yellow"></span>
           <span class="terminal-dot green"></span>
-          <span class="terminal-title">kai@dev ~ %</span>
+          <span class="terminal-title">kai-assistant // local</span>
         </div>
-        <div class="terminal-body" id="terminal-body">
-          <div class="terminal-line">
-            <span class="terminal-prompt">$</span>
-            <span class="terminal-cmd">cat about_kai.json</span>
+        <div class="ai-console-body">
+          <div class="ai-console-intro">
+            <span class="ai-avatar">AI</span>
+            <div>
+              <strong>Kai's personal AI</strong>
+              <span>Ask me about Kai's work, research, or background.</span>
+            </div>
           </div>
-          <pre class="terminal-output" id="terminal-json"></pre>
-          <div class="terminal-line terminal-line-2">
-            <span class="terminal-prompt">$</span>
-            <span class="terminal-cmd">echo $CURRENT_FOCUS</span>
+          <div class="ai-messages" id="ai-messages" aria-live="polite">
+            <div class="ai-message assistant-message">Try a command below, or ask: <em>What does Kai work on?</em></div>
           </div>
-          <div class="terminal-output terminal-output-2">
-            Building large-scale recommendation systems @ Meta
+          <div class="ai-suggestions" aria-label="Suggested commands">
+            <button type="button" data-command="/about">/about</button>
+            <button type="button" data-command="/experience">/experience</button>
+            <button type="button" data-command="/publications">/papers</button>
+            <button type="button" data-command="/help">/help</button>
           </div>
-          <div class="terminal-line terminal-line-3">
+          <form class="ai-input-row" id="assistant-form">
+            <span class="ai-prompt">›</span>
+            <input id="assistant-input" type="text" autocomplete="off" placeholder="Type a command..." aria-label="Ask Kai's assistant" />
+            <button type="submit" aria-label="Send command"><i class="fas fa-arrow-up"></i></button>
+          </form>
+          <div class="ai-console-footer"><span class="status-dot"></span> local knowledge base · no API required</div>
+          <script type="application/json" id="assistant-data">{"sidebar":{"about":false,"education":false,"name":"Kai Wang","tagline":"Senior ML Engineer @ Meta","avatar":"profile2.png","email":"wangjinjie722@gmail.com","linkedin":"Kai Wang","linkedin_url":"https://www.linkedin.com/in/kai-wang-822870170/","github":"wangjinjie722","roles":["Senior ML Engineer @ Meta","RecSys Researcher","Game AI Enthusiast"]},"career-profile":{"title":"About Me","summary":"Hi, there! I am currently a senior machine learning engineer at [Meta](https://about.meta.com/), working on Instagram recommendation systems. Ex @ [TikTok](https://www.tiktok.com/), Tencent Game, [Lightspeed & Quantum Studios Group](https://guangzi.qq.com/).\nPrior to this, I obtained my M.S. degree from [UC San Diego](http://www.ece.ucsd.edu/),\nadvised by Prof. [Pengtao Xie](https://pengtaoxie.github.io/) and Prof. [Julian McAuley](https://cseweb.ucsd.edu/~jmcauley/),\nand my B.E. degree from [Northwestern Polytechnical University(NPU)](http://en.nwpu.edu.cn/), respectively.\n\nMy research interest includes Applied Machine Learning in recommender system and game industry.\n","resume":"../assets/images/KaiWang_resume.pdf"},"education":[{"degree":"M.S. in Electrical and Computer Engineering","university":"University of California San Diego","time":"Sept. 2018 - Dec. 2020","logo":"../assets/images/ucsd_seal.png","details":""},{"degree":"B.E. in Aerospace Engineering","university":"Northwestern Polytechnical University","time":"Sept. 2014 - Jul. 2018","logo":"../assets/images/npu_seal.png","details":""}],"experiences":[{"role":"Senior Machine Learning Engineer","time":"Mar. 2026 - Present","logo":"../assets/images/meta.png","company":"Meta","details":"Instagram Threads recommendation system, feed relevance. I support new user optimization and interest/diversity in the re-rank layer."},{"role":"Senior Machine Learning Engineer","time":"May. 2022 - Mar. 2026","logo":"../assets/images/tiktok2.png","company":"TikTok","details":"TikTok Social recommender system, ranking model owner."},{"role":"Machine Learning Researcher","time":"Mar. 2021 - May. 2022","logo":"../assets/images/lolm2.png","company":"Tencent","details":"League of Legend - Wild Rift & CN, matching system and skill-level prediction."},{"role":"Machine Learning Engineer Intern","time":"Sept. 2020 - Nov.2020","logo":"../assets/images/bd.png","company":"ByteDance","details":"Short video recommender system, watermelon video."},{"role":"Summer Research Intern & Research Assistant","time":"Mar. 2020 - Aug.2020","logo":"../assets/images/jacob.png","company":"University of California, San Diego","details":""},{"role":"Machine Learning Engineer Intern","time":"Oct. 2019 - Feb.2020","logo":"../assets/images/txgame.png","company":"Tencent","details":"Game community recommender system"},{"role":"Machine Learning Research Intern","time":"Jun. 2019 - Sept.2019","logo":"../assets/images/pingan.png","company":"PingAn Tech","details":"Medical deep & reinforcement learning"}],"publications":{"title":"Publications","intro":"","papers":[{"title":"CHAMP: Cross-domain Hybrid Architecture for Matchmaking and Prediction in Online Multi-Player Games","link":"../assets/images/CHAMP_camera_ready.pdf","intro":"../assets/images/CHAMP.png","authors":"__Kai Wang__, Ge Fan, Chaoyun Zhang, Yuyang Jiang, Yuze Liu","conference":"CIKM2026 [[paper](https://doi.org/10.1145/3799682.3840114)]","details":"A cross-domain matchmaking framework for fairer online MOBA games."},{"title":"CUPID: Improving Battle Fairness and Position Satisfaction in Online MOBA Games with a Re-matchmaking System","link":"../assets/images/2024CUPID.pdf","intro":"../assets/images/cupid.png","authors":"Ge Fan, Chaoyun Zhang, __Kai Wang__, Yingjie Li, Junyang Chen, Zenglin Xu","conference":"CSCW2024 [[paper](https://arxiv.org/abs/2406.19720)]","details":"Matching systems in Game Industry, applied in a popular MOBA game."},{"title":"QuickSkill Novice Skill Estimation in Online Multiplayer Games","link":"https://arxiv.org/abs/2208.07704","intro":"../assets/images/trueskill.png","authors":"__Kai Wang__, Chaoyun Zhang, Hao Chen, Ge Fan, Yingjie Li, Lifang Wu, Bingchao Zheng","conference":"CIKM2022 [[paper](https://arxiv.org/abs/2208.07704)]","details":"A novel ML method in Game Industry, applied in a popular MOBA game."},{"title":"MV-HAN A Hybrid Attentive Networks based Multi-View Learning Model for Large-scale Contents Recommendation","link":"../assets/images/2022MVHAN.pdf","intro":"../assets/images/mv_han.png","authors":"Ge Fan, Chaoyun Zhang, __Kai Wang__, Junyang Chen","conference":"ASE2022 [[paper](https://dl.acm.org/doi/abs/10.1145/3551349.3559496)]","details":"Applied in Tencent Recommender Systems."},{"title":"AdnFM -- An Attentive DenseNet based Factorization Machine for CTR Prediction","link":"https://dl.acm.org/doi/abs/10.1145/3512850.3512852","intro":"../assets/images/adnfm.png","authors":"__Kai Wang__, Chunxu Shen, Chaoyun Zhang, Wenye Ma","conference":"ICCDE2022 [[paper](https://dl.acm.org/doi/abs/10.1145/3512850.3512852)]","details":"A new model for CTR prediction."}]},"footer":"<p>\"Get normal things, interesting jobs, nice apartments, and someone hiking together.\"</p>\n","skills":{"title":"Skills & Proficiency","categories":[{"name":"Languages","items":["Python","C++","SQL","Java","Go"]},{"name":"ML / DL","items":["PyTorch","TensorFlow","Spark","Hive","XGBoost","Deep Learning"]},{"name":"Tools & Infra","items":["Docker","Kubernetes","Git","Redis","Kafka","Linux"]}]}}</script>
+          <div class="terminal-line terminal-line-3" aria-hidden="true">
             <span class="terminal-prompt">$</span>
             <span class="terminal-cmd terminal-blink">_</span>
           </div>
@@ -135,7 +146,7 @@
 
 <section class="section about-section" id="about">
   <div class="container">
-    <h2 class="section-title" data-aos="fade-up">About Me</h2>
+    <h2 class="section-title" data-label="01 // profile" data-aos="fade-up">About Me</h2>
     <div class="about-content" data-aos="fade-up" data-aos-delay="100">
       <div class="about-text">
         <p>Hi, there! I am currently a senior machine learning engineer at <a href="https://about.meta.com/">Meta</a>, working on Instagram recommendation systems. Ex @ <a href="https://www.tiktok.com/">TikTok</a>, Tencent Game, <a href="https://guangzi.qq.com/">Lightspeed &amp; Quantum Studios Group</a>.
@@ -147,7 +158,7 @@ and my B.E. degree from <a href="http://en.nwpu.edu.cn/">Northwestern Polytechni
 
       </div>
       
-      <a href="../assets/images/KaiWang_resume_2024.pdf" class="btn-resume" target="_blank" rel="noopener">
+      <a href="../assets/images/KaiWang_resume.pdf" class="btn-resume" target="_blank" rel="noopener">
         <i class="fas fa-download"></i> Download Resume
       </a>
       
@@ -161,7 +172,7 @@ and my B.E. degree from <a href="http://en.nwpu.edu.cn/">Northwestern Polytechni
 
 <section class="section experience-section" id="experience">
   <div class="container">
-    <h2 class="section-title" data-aos="fade-up">Professional Experience</h2>
+    <h2 class="section-title" data-label="02 // runtime" data-aos="fade-up">Professional Experience</h2>
     <div class="timeline">
       <div class="timeline-progress" id="timeline-progress"></div>
       
@@ -308,7 +319,7 @@ and my B.E. degree from <a href="http://en.nwpu.edu.cn/">Northwestern Polytechni
 
 <section class="section education-section" id="education">
   <div class="container">
-    <h2 class="section-title" data-aos="fade-up">Education</h2>
+    <h2 class="section-title" data-label="03 // training" data-aos="fade-up">Education</h2>
     <div class="education-grid">
       
       <div class="education-card" data-aos="fade-up" data-aos-delay="150">
@@ -343,7 +354,7 @@ and my B.E. degree from <a href="http://en.nwpu.edu.cn/">Northwestern Polytechni
 
 <section class="section publications-section" id="publications">
   <div class="container">
-    <h2 class="section-title" data-aos="fade-up">Publications</h2>
+    <h2 class="section-title" data-label="04 // research" data-aos="fade-up">Publications</h2>
     <div class="publications-grid">
       
       <div class="publication-card" data-aos="fade-up" data-aos-delay="100">
@@ -474,7 +485,7 @@ and my B.E. degree from <a href="http://en.nwpu.edu.cn/">Northwestern Polytechni
 
 <section class="section travel-section" id="travel">
   <div class="container">
-    <h2 class="section-title" data-aos="fade-up">Places I've Been</h2>
+    <h2 class="section-title" data-label="05 // coordinates" data-aos="fade-up">Places I've Been</h2>
     <div class="travel-content" data-aos="fade-up" data-aos-delay="100">
       <div class="travel-map-wrapper">
         <iframe
@@ -498,7 +509,7 @@ and my B.E. degree from <a href="http://en.nwpu.edu.cn/">Northwestern Polytechni
 
 <section class="section visitor-section" id="visitors">
   <div class="container">
-    <h2 class="section-title" data-aos="fade-up">Visitors Around the World</h2>
+    <h2 class="section-title" data-label="06 // network" data-aos="fade-up">Visitors Around the World</h2>
     <div class="visitor-content" data-aos="fade-up" data-aos-delay="100">
       <div class="visitor-flags">
         <a href="https://info.flagcounter.com/zg0z" target="_blank" rel="noopener">

@@ -2,7 +2,7 @@
 {% if publications %}
 <section class="section publications-section" id="publications">
   <div class="container">
-    <h2 class="section-title" data-aos="fade-up">{{ publications.title }}</h2>
+    <h2 class="section-title" data-label="04 // research" data-aos="fade-up">{{ publications.title }}</h2>
     <div class="publications-grid">
       {% for publication in publications.papers %}
       <div class="publication-card" data-aos="fade-up" data-aos-delay="{{ forloop.index | times: 100 }}">

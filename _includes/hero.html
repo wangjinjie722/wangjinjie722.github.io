@@ -37,27 +37,38 @@
     </div>
     <!-- Right: terminal -->
     <div class="hero-right">
-      <div class="terminal">
+      <div class="ai-console" aria-label="Kai's interactive AI assistant">
         <div class="terminal-header">
           <span class="terminal-dot red"></span>
           <span class="terminal-dot yellow"></span>
           <span class="terminal-dot green"></span>
-          <span class="terminal-title">kai@dev ~ %</span>
+          <span class="terminal-title">kai-assistant // local</span>
         </div>
-        <div class="terminal-body" id="terminal-body">
-          <div class="terminal-line">
-            <span class="terminal-prompt">$</span>
-            <span class="terminal-cmd">cat about_kai.json</span>
+        <div class="ai-console-body">
+          <div class="ai-console-intro">
+            <span class="ai-avatar">AI</span>
+            <div>
+              <strong>Kai's personal AI</strong>
+              <span>Ask me about Kai's work, research, or background.</span>
+            </div>
           </div>
-          <pre class="terminal-output" id="terminal-json"></pre>
-          <div class="terminal-line terminal-line-2">
-            <span class="terminal-prompt">$</span>
-            <span class="terminal-cmd">echo $CURRENT_FOCUS</span>
+          <div class="ai-messages" id="ai-messages" aria-live="polite">
+            <div class="ai-message assistant-message">Try a command below, or ask: <em>What does Kai work on?</em></div>
           </div>
-          <div class="terminal-output terminal-output-2">
-            Building large-scale recommendation systems @ Meta
+          <div class="ai-suggestions" aria-label="Suggested commands">
+            <button type="button" data-command="/about">/about</button>
+            <button type="button" data-command="/experience">/experience</button>
+            <button type="button" data-command="/publications">/papers</button>
+            <button type="button" data-command="/help">/help</button>
           </div>
-          <div class="terminal-line terminal-line-3">
+          <form class="ai-input-row" id="assistant-form">
+            <span class="ai-prompt">›</span>
+            <input id="assistant-input" type="text" autocomplete="off" placeholder="Type a command..." aria-label="Ask Kai's assistant" />
+            <button type="submit" aria-label="Send command"><i class="fas fa-arrow-up"></i></button>
+          </form>
+          <div class="ai-console-footer"><span class="status-dot"></span> local knowledge base · no API required</div>
+          <script type="application/json" id="assistant-data">{{ site.data.data | jsonify }}</script>
+          <div class="terminal-line terminal-line-3" aria-hidden="true">
             <span class="terminal-prompt">$</span>
             <span class="terminal-cmd terminal-blink">_</span>
           </div>
