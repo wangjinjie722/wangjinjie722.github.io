@@ -53,7 +53,7 @@ experiences:
       time: Mar. 2026 - Present
       logo: "../assets/images/meta.png"
       company: Meta
-      details: Instagram recommendation system.
+      details: Instagram Threads recommendation system, feed relevance. I support new user optimization and interest/diversity in the re-rank layer.
 
     - role: Senior Machine Learning Engineer
       time: May. 2022 - Mar. 2026
@@ -95,6 +95,13 @@ publications:
     title: Publications
     intro: |
     papers:
+      - title: "CHAMP: Cross-domain Hybrid Architecture for Matchmaking and Prediction in Online Multi-Player Games"
+        link: "../assets/images/CHAMP_camera_ready.pdf"
+        intro: "../assets/images/CHAMP.png"
+        authors: __Kai Wang__, Ge Fan, Chaoyun Zhang, Yuyang Jiang, Yuze Liu
+        conference: CIKM2026 [[paper](https://doi.org/10.1145/3799682.3840114)]
+        details: A cross-domain matchmaking framework for fairer online MOBA games.
+
       - title: "CUPID: Improving Battle Fairness and Position Satisfaction in Online MOBA Games with a Re-matchmaking System"
         link: "../assets/images/2024CUPID.pdf"
         intro: "../assets/images/cupid.png"
